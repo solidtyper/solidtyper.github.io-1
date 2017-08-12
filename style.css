@@ -1,11 +1,133 @@
-*{
-  amrgin: 0;
-  box-sizing: border-box
-}
+/* menu bar options colors */
+* {
+  margin: 0;
+  box-sizing: border-box; }
 
-body{
-  background: #055;
-  color: #0AAA;
+body {
+  background: #D1A554;
   text-align: center;
-  font-size: 40px;
-}
+  font-size: 20px; }
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh; }
+  .container .me {
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    width: 140px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    border: 1px dotted #000; }
+    .container .me .pic {
+      background-image: url("avatar.jpg");
+      background-size: cover;
+      width: 50%;
+      height: 100%; }
+    .container .me .name {
+      width: 50%;
+      height: 100%;
+      padding-top: 10%;
+      color: #FFF; }
+  .container .menu {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent 100%);
+    /* general style of options in options bar */
+    /* custom style of options in options bar  */ }
+    .container .menu .welcome-opt {
+      position: absolute;
+      top: 40vh;
+      left: -100%;
+      width: 150px;
+      height: 50px;
+      background-color: #BDCAEB;
+      position: relative;
+      animation-name: appeare;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0;
+      animation-fill-mode: forwards; }
+      .container .menu .welcome-opt::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100%;
+        border-left: 50px solid #BDCAEB;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent; }
+    .container .menu .about-opt {
+      position: absolute;
+      top: 45vh;
+      left: -100%;
+      width: 150px;
+      height: 50px;
+      background-color: #385CB8;
+      position: relative;
+      animation-name: appeare;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0.16s;
+      animation-fill-mode: forwards; }
+      .container .menu .about-opt::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100%;
+        border-left: 50px solid #385CB8;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent; }
+    .container .menu .projects-opt {
+      position: absolute;
+      top: 50vh;
+      left: -100%;
+      width: 150px;
+      height: 50px;
+      background-color: #B85038;
+      position: relative;
+      animation-name: appeare;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0.21s;
+      animation-fill-mode: forwards; }
+      .container .menu .projects-opt::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100%;
+        border-left: 50px solid #B85038;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent; }
+    .container .menu .contact-opt {
+      position: absolute;
+      top: 55vh;
+      left: -100%;
+      width: 150px;
+      height: 50px;
+      background-color: #277D6B;
+      position: relative;
+      animation-name: appeare;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0.26s;
+      animation-fill-mode: forwards; }
+      .container .menu .contact-opt::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100%;
+        border-left: 50px solid #277D6B;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent; }
+@keyframes appeare {
+  0% {
+    left: -100%; }
+  100% {
+    left: 0; } }
+/* */
+
+/*# sourceMappingURL=style.css.map */
