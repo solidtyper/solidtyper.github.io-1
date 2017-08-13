@@ -1,4 +1,5 @@
 /* menu bar options colors */
+/* arrow-color */
 * {
   margin: 0;
   box-sizing: border-box; }
@@ -20,8 +21,7 @@ body {
     width: 140px;
     height: 80px;
     display: flex;
-    flex-direction: row;
-    border: 1px dotted #000; }
+    flex-direction: row; }
     .container .me .pic {
       background-image: url("avatar.jpg");
       background-size: cover;
@@ -32,11 +32,39 @@ body {
       height: 100%;
       padding-top: 10%;
       color: #FFF; }
+  .container .arrow-animation {
+    transform: translate(-2px, -2px) scale(0.8, 0.8) !important; }
+  .container .outer-circle {
+    position: fixed;
+    z-index: 1;
+    top: 30%;
+    left: 2%;
+    width: 50px;
+    height: 50px;
+    border: 6px solid #999;
+    border-radius: 50%; }
+    .container .outer-circle .inner-circle {
+      width: 42px;
+      height: 42px;
+      background-color: #999;
+      border-radius: 50%;
+      transform: translate(-2px, -2px) scale(0.5, 0.5);
+      transition: 0.5s all ease-in-out; }
+  .container .menu-opacity {
+    opacity: 1 !important; }
   .container .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
     position: relative;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent 100%);
+    opacity: 0;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transition: 0.75s all ease-in-out;
     /* general style of options in options bar */
     /* custom style of options in options bar  */ }
     .container .menu .welcome-opt {
@@ -47,11 +75,9 @@ body {
       height: 50px;
       background-color: #BDCAEB;
       position: relative;
-      animation-name: appeare;
-      animation-duration: 0.5s;
-      animation-timing-function: ease-in-out;
-      animation-delay: 0;
-      animation-fill-mode: forwards; }
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0; }
       .container .menu .welcome-opt::after {
         content: "";
         position: absolute;
@@ -68,11 +94,9 @@ body {
       height: 50px;
       background-color: #385CB8;
       position: relative;
-      animation-name: appeare;
-      animation-duration: 0.5s;
-      animation-timing-function: ease-in-out;
-      animation-delay: 0.16s;
-      animation-fill-mode: forwards; }
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.16s; }
       .container .menu .about-opt::after {
         content: "";
         position: absolute;
@@ -89,11 +113,9 @@ body {
       height: 50px;
       background-color: #B85038;
       position: relative;
-      animation-name: appeare;
-      animation-duration: 0.5s;
-      animation-timing-function: ease-in-out;
-      animation-delay: 0.21s;
-      animation-fill-mode: forwards; }
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.21s; }
       .container .menu .projects-opt::after {
         content: "";
         position: absolute;
@@ -110,11 +132,9 @@ body {
       height: 50px;
       background-color: #277D6B;
       position: relative;
-      animation-name: appeare;
-      animation-duration: 0.5s;
-      animation-timing-function: ease-in-out;
-      animation-delay: 0.26s;
-      animation-fill-mode: forwards; }
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.26s; }
       .container .menu .contact-opt::after {
         content: "";
         position: absolute;
@@ -123,11 +143,9 @@ body {
         border-left: 50px solid #277D6B;
         border-top: 25px solid transparent;
         border-bottom: 25px solid transparent; }
-@keyframes appeare {
-  0% {
-    left: -100%; }
-  100% {
-    left: 0; } }
+    .container .menu .options-appeare {
+      left: 0 !important; }
+
 /* */
 
 /*# sourceMappingURL=style.css.map */
