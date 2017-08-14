@@ -12,72 +12,82 @@ body {
 .container {
   position: relative;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  min-height: 400px;
+  min-width: 400px;
+  position: absolute;
+  perspective: 600px;
+  transform-style: preserve-3d;
+  /* End  Of  Menu Bar */ }
   .container .me {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 10px;
     left: 10px;
     width: 140px;
     height: 80px;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-between;
+    visibility: hidden; }
     .container .me .pic {
       background-image: url("avatar.jpg");
       background-size: cover;
-      width: 50%;
+      width: 48%;
       height: 100%; }
     .container .me .name {
-      width: 50%;
+      width: 48%;
       height: 100%;
-      padding-top: 10%;
-      color: #FFF; }
+      padding-top: 10%; }
   .container .arrow-animation {
     transform: translate(-2px, -2px) scale(0.8, 0.8) !important; }
   .container .outer-circle {
     position: fixed;
-    z-index: 1;
-    top: 30%;
-    left: 2%;
+    z-index: 2;
+    top: 25vh;
+    left: 2vw;
     width: 50px;
     height: 50px;
     border: 6px solid #999;
-    border-radius: 50%; }
+    border-radius: 50%;
+    cursor: pointer;
+    visibility: hidden; }
     .container .outer-circle .inner-circle {
       width: 42px;
       height: 42px;
       background-color: #999;
       border-radius: 50%;
       transform: translate(-2px, -2px) scale(0.5, 0.5);
-      transition: 0.5s all ease-in-out; }
+      transition: 0.75s all ease-in-out; }
+  .container .menu-appeare {
+    width: 100vw !important; }
   .container .menu-opacity {
     opacity: 1 !important; }
   .container .menu {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     position: relative;
-    width: 100vw;
+    width: 0;
     height: 100vh;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent 100%);
     opacity: 0;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    transition: 0.75s all ease-in-out;
+    transition: 0.7s opacity ease-in-out;
     /* general style of options in options bar */
     /* custom style of options in options bar  */ }
     .container .menu .welcome-opt {
       position: absolute;
       top: 40vh;
-      left: -100%;
+      left: -200px;
+      cursor: pointer;
       width: 150px;
       height: 50px;
       background-color: #BDCAEB;
       position: relative;
       transition-duration: 0.5s;
       transition-timing-function: ease-in-out;
-      transition-delay: 0; }
+      transition-delay: 0.11s; }
       .container .menu .welcome-opt::after {
         content: "";
         position: absolute;
@@ -89,7 +99,8 @@ body {
     .container .menu .about-opt {
       position: absolute;
       top: 45vh;
-      left: -100%;
+      left: -200px;
+      cursor: pointer;
       width: 150px;
       height: 50px;
       background-color: #385CB8;
@@ -108,7 +119,8 @@ body {
     .container .menu .projects-opt {
       position: absolute;
       top: 50vh;
-      left: -100%;
+      left: -200px;
+      cursor: pointer;
       width: 150px;
       height: 50px;
       background-color: #B85038;
@@ -127,7 +139,8 @@ body {
     .container .menu .contact-opt {
       position: absolute;
       top: 55vh;
-      left: -100%;
+      left: -200px;
+      cursor: pointer;
       width: 150px;
       height: 50px;
       background-color: #277D6B;
@@ -145,7 +158,176 @@ body {
         border-bottom: 25px solid transparent; }
     .container .menu .options-appeare {
       left: 0 !important; }
+  .container .page_on {
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #FFE79B inset; }
+  .container .page_off {
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #3D3725 inset; }
+  .container .port_right {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to bottom, #EAEAFF, #BDCAEB);
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-name: port-right-animation;
+    animation-fill-mode: forwards;
+    transform-origin: right;
+    transform: rotateY(-120deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .container .port_left {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to bottom, #EAEAFF, #BDCAEB);
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-name: port-left-animation;
+    animation-fill-mode: forwards;
+    transform-origin: left;
+    transform: rotateY(120deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+@keyframes port-right-animation {
+  0% {
+    transform: rotateY(-120deg); }
+  40% {
+    transform: rotateY(35deg); }
+  75% {
+    transform: rotateY(-35deg); }
+  100% {
+    transform: rotateY(0); } }
+@keyframes port-left-animation {
+  0% {
+    transform: rotateY(120deg); }
+  40% {
+    transform: rotateY(-35deg); }
+  75% {
+    transform: rotateY(35deg); }
+  100% {
+    transform: rotateY(0); } }
+  .container #welcome {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    perspective: 600px;
+    transform-style: preserve-3d; }
 
-/* */
+/*  lamps but is seems doesn't work for now */
+/* .lamps_container
+ *   width: 100%
+ *   height: 4vh
+ *   border: 1px solid #000
+ *   display: flex
+ *   flex-direction: row
+ *   justify-content: space-between
+ *   justify-content: space-around */
+/* .lamps_center
+ *   width: 4vh
+ *   height: 100%
+ *   flex-direction: column */
+/* .port_right
+ *     align-items: flex-end */
+/* .lamps_bottom
+ *   top: 96vh */
+/* .lamp
+ *   position: relative
+ *   width: 10px
+ *   height: 10px
+ *   background: #453E2A
+ *   border-radius: 20% */
+/* @mixin lamp-after($left)
+ *   content: ''
+ *   position: absolute
+ *   top: 0
+ *   left: $left
+ *   border-left: 10px
+ *   border-top: 5px
+ *   border-bottom: 5px
+ *   border-top-left-radius: 20%
+ *   border-bottom-left-radius: 20%
+ *   background: radial-gradient(circle, #FFFFAE, #D4D450) */
+/* .port_right
+ *   .lamps_center::after
+ *     @include lamp-after(-10px) */
+/* .port_left
+ *   .lamps_center
+ *     @include lamp-after(-10px) */
+.welcome_sign_border {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  width: 50vw;
+  height: 2em;
+  border: 4px solid #000;
+  animation-name: welcome_up;
+  animation-delay: 2.5s;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  visibility: hidden; }
+@keyframes welcome_up {
+  to {
+    top: 15%; } }
+  .welcome_sign_border .welcome_sign {
+    width: 100%;
+    height: 100%;
+    background: #900;
+    font-size: 30px;
+    animation-name: welcome_rotation;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out; }
+@keyframes welcome_rotation {
+  0% {
+    transform: scale(0.2) rotateX(360deg); }
+  50% {
+    transform: scale(1) rotateX(-60deg); } }
+.text {
+  position: absolute;
+  top: 40%;
+  left: 100%;
+  opacity: 0;
+  width: 80%;
+  font-size: 20px;
+  animation-name: text_appear;
+  animation-delay: 2.5s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out; }
+
+@keyframes text_appear {
+  to {
+    opacity: 1;
+    left: 10%; } }
+/* in nedd to empty bottom lines */
 
 /*# sourceMappingURL=style.css.map */

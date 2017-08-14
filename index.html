@@ -8,6 +8,7 @@
   </head>
   <body>
     <div class="container">
+      <!-- fixed elements-->
       <div class="me">
         <div class="pic"></div>
         <div class="name">anas ouardini</div>
@@ -16,15 +17,40 @@
         <div id="arrow" class="inner-circle"></div>
       </div>
       <div id="options" class="menu">
-        <div class="welcome-opt">welcome</div>
-        <div class="about-opt">about me</div>
-        <div class="projects-opt">my projects</div>
-        <div class="contact-opt">contact me</div>
+        <div onclick="menu(&quot;welcome&quot;)" class="welcome-opt">welcome
+          <div class="page_on"></div>
+        </div>
+        <div onclick="menu(&quot;about&quot;)" class="about-opt">about me
+          <div class="page_off"></div>
+        </div>
+        <div onclick="menu(&quot;projects&quot;)" class="projects-opt">my projects
+          <div class="page_off"></div>
+        </div>
+        <div onclick="menu(&quot;contact&quot;)" class="contact-opt">contact me
+          <div class="page_off"></div>
+        </div>
       </div>
-      <div class="welcome"></div>
-      <div class="about"></div>
-      <div class="projects"></div>
-      <div class="contact"></div>
+      <div class="port">   
+        <div class="port_right"></div>
+        <div class="port_left"></div>
+      </div>
+      <!-- END of fixed elements-->
+      
+      <div id="welcome">
+        <!-- lamps elements had been removed-->
+      </div>
+      <div class="welcome_sign_border">
+        <div class="welcome_sign">welcome</div>
+      </div>
+      <div class="text">
+        <p>
+           
+          Lorem ipsum dolor sit amet, qui no inani scripserit. Antiopam assueverit ut qui, ius sonet scriptorem an. Mel meliore principes theophrastus id. Ex eos impedit consequat elaboraret, odio atqui perfecto ut cum, nam ad omnis putent.
+        </p>
+      </div>
+      <div id="about"></div>
+      <div id="projects"></div>
+      <div id="contact"></div>
     </div>
   </body>
 </html>
