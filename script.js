@@ -1,7 +1,7 @@
 
 window.onload = function(){
 
-    window.scrollTo(2400, 2600);
+    /*window.scrollTo(2400, 2600);*/
 
     setTimeout(function(){
       document.getElementById('welcome').children[0].children[1].children[0].classList.add('welcome_sign_up')
