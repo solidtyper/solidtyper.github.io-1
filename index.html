@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>codeSolide</title>
+    <title>my portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
-    <div class="container">
-      <!-- fixed elements-->
-      <div class="me">
-        <div class="pic"></div>
-        <div class="name">anas ouardini</div>
-      </div>
-      <div onclick="menu_animate()" class="outer-circle">
-        <div id="arrow" class="inner-circle"></div>
-      </div>
-      <div id="options" class="menu">
-        <div onclick="menu(&quot;welcome&quot;)" class="welcome-opt">welcome
+    <!-- fixed elements-->
+    <div class="overlay"></div>
+    <div class="owner">
+      <div class="avatar"></div>
+      <div class="name"></div>
+    </div>
+    <div id="menu" class="menuBar">
+      <div onclick="menu_animate()" class="outer_circle">
+        <div id="button" class="inner_circle"></div>
+      </div><a href="#welcome">
+        <div onclick="page_status(&quot;welcome&quot;)" class="welcome">welcome
           <div class="page_on"></div>
-        </div>
-        <div onclick="menu(&quot;about&quot;)" class="about-opt">about me
+        </div></a><a href="#about">
+        <div onclick="page_status(&quot;about&quot;)" class="about">about
           <div class="page_off"></div>
-        </div>
-        <div onclick="menu(&quot;projects&quot;)" class="projects-opt">my projects
+        </div></a><a href="#projects">
+        <div onclick="page_status(&quot;projects&quot;)" class="projects">projects
           <div class="page_off"></div>
-        </div>
-        <div onclick="menu(&quot;contact&quot;)" class="contact-opt">contact me
+        </div></a><a href="#contact">
+        <div onclick="page_status(&quot;contact&quot;)" class="contact">contact
           <div class="page_off"></div>
-        </div>
-      </div>
-      <div class="port">   
-        <div class="port_right"></div>
-        <div class="port_left"></div>
-      </div>
-      <!-- END of fixed elements-->
-      
+        </div></a>
+    </div>
+    <div class="container">
       <div id="welcome">
-        <!-- lamps elements had been removed-->
+        <div class="welcome_content_container">
+          <div class="welcome_port">
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+          <div class="welcome_content">
+            <div class="welcome_sign"></div>
+            <p>Lorem ipsum dolor sit amet, qui no inani scripserit. Antiopam assueverit ut qui, ius sonet scriptorem an. Mel meliore principes theophrastus id. Ex eos impedit consequat elaboraret, odio atqui perfecto ut cum, nam ad omnis putent.</p>
+          </div>
+        </div>
       </div>
-      <div class="welcome_sign_border">
-        <div class="welcome_sign">welcome</div>
+      <div id="about">
+        <div class="description"></div>
+        <div class="skills"></div>
+        <div class="progression"></div>
+        <div class="timeline"></div>
       </div>
-      <div class="text">
-        <p>
-           
-          Lorem ipsum dolor sit amet, qui no inani scripserit. Antiopam assueverit ut qui, ius sonet scriptorem an. Mel meliore principes theophrastus id. Ex eos impedit consequat elaboraret, odio atqui perfecto ut cum, nam ad omnis putent.
-        </p>
-      </div>
-      <div id="about"></div>
       <div id="projects"></div>
       <div id="contact"></div>
     </div>
