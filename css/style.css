@@ -295,7 +295,7 @@ body {
 @keyframes about_flashing {
   100% {
     background: rgba(0, 0, 255, 0.3); } }
-    .container #about .description {
+    .container #about #about_description {
       position: absolute;
       top: 44.444%;
       left: 33.333%;
@@ -303,7 +303,7 @@ body {
       height: 33.333%;
       border: 4px solid #000;
       background: #284182; }
-      .container #about .description .header {
+      .container #about #about_description .header {
         position: absolute;
         top: 2%;
         left: 10%;
@@ -311,21 +311,21 @@ body {
         height: 10%;
         border: 2px dotted #000;
         text-align: center; }
-      .container #about .description .img {
+      .container #about #about_description .img {
         position: absolute;
         top: 20%;
         left: 0;
         width: 40%;
         height: 40%;
         border: 2px dotted #000; }
-      .container #about .description .paragraph {
+      .container #about #about_description .paragraph {
         position: absolute;
         top: 20%;
         left: 45%;
         width: 55%;
         height: 40%;
         border: 2px dotted #000; }
-      .container #about .description .about_menu {
+      .container #about #about_description .about_menu {
         position: absolute;
         top: 80%;
         left: 20%;
@@ -425,7 +425,7 @@ body {
 @keyframes projects_flashing {
   100% {
     background: rgba(120, 21, 57, 0.3); } }
-    .container #projects .description {
+    .container #projects #proj_description {
       position: absolute;
       top: 33.333%;
       left: 33.333%;
@@ -433,7 +433,7 @@ body {
       height: 33.333%;
       border: 4px solid #000;
       background: #6B3733; }
-      .container #projects .description .header {
+      .container #projects #proj_description .header {
         position: absolute;
         top: 20%;
         left: 10%;
@@ -441,7 +441,7 @@ body {
         height: 10%;
         border: 2px dotted #000;
         text-align: center; }
-      .container #projects .description .desc {
+      .container #projects #proj_description .desc {
         position: absolute;
         top: 40%;
         left: 10%;
@@ -530,17 +530,17 @@ body {
       position: absolute;
       top: 40%;
       font-size: 40px; }
-    .container #contact .contact {
+    .container #contact #contact_me {
       position: absolute;
       top: 30%;
       left: 10%;
       width: 80%;
       height: 20%;
       border: 2px dotted #000; }
-      .container #contact .contact .fa-at {
+      .container #contact #contact_me .fa-at {
         top: 36%;
         left: 35%; }
-      .container #contact .contact .fa-mobile {
+      .container #contact #contact_me .fa-mobile {
         top: 56%;
         left: 35.5%; }
     .container #contact .socialmedia {
@@ -565,7 +565,7 @@ body {
       .container #contact .socialmedia .fa-codepen {
         color: #EEE;
         left: 83%; }
-    .container #contact .contact span, .container #contact .socialmedia span {
+    .container #contact #contact_me span, .container #contact .socialmedia span {
       font-size: 25px; }
 @keyframes contact_flashing {
   100% {
