@@ -1,7 +1,7 @@
 
 window.onload = function(){
 
-    /*window.scrollTo(2400, 2600);*/
+    window.scrollTo(6000, 6000);
 
     setTimeout(function(){
       document.getElementById('welcome').children[0].children[1].children[0].classList.add('welcome_sign_up')
@@ -14,7 +14,7 @@ window.onload = function(){
     for(var i = 1; i <= 4; i++){
       document.getElementById('menu').children[i].children[0].style.color = '#FF423F';
     }
-    window.location.href = '#welcome';
+    window.location.href = '#w_content';
     document.getElementById('menu').children[1].children[0].style.color = '#0A0';
   /*  document.getElementById('menu').children[1].children[0].classList.add('selected_option');*/
 }
