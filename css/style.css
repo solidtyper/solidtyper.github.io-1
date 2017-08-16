@@ -2,9 +2,13 @@
   margin: 0;
   box-sizing: border-box; }
 
+a {
+  text-decoration: none; }
+
 body {
   background: #222;
-  min-height: 420px; }
+  min-height: 420px;
+  z-index: -1; }
 
 .overlay {
   position: fixed;
@@ -77,8 +81,6 @@ body {
     transition: all 0.25s ease-in; }
   .menuBar .outer_circle .menu_button_animation {
     transform: translate(-4.5px, -8px) scale(0.7); }
-.menuBar a {
-  text-decoration: none; }
 .menuBar .welcome {
   position: fixed;
   top: 40%;
@@ -185,7 +187,7 @@ body {
 .container {
   position: relative;
   width: 6000px;
-  z-index: -1;
+  z-index: 1;
   height: 6000px;
   transition: 4s all ease-in; }
   .container #welcome {
@@ -319,8 +321,8 @@ body {
       .container #about .description .paragraph {
         position: absolute;
         top: 20%;
-        left: 50%;
-        width: 50%;
+        left: 45%;
+        width: 55%;
         height: 40%;
         border: 2px dotted #000; }
       .container #about .description .about_menu {
@@ -334,18 +336,80 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-      width: 666px;
-      height: 666px;
+      width: 33.333%;
+      height: 33.333%;
       border: 4px solid #000;
       background: #284182; }
+      .container #about .skills .header {
+        position: absolute;
+        top: 2%;
+        left: 10%;
+        width: 80%;
+        height: 10%;
+        border: 2px dotted #000;
+        text-align: center; }
+      .container #about .skills .design_skills {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        width: 50%;
+        height: 40%;
+        border: 2px dotted #000;
+        text-align: center; }
+      .container #about .skills .development_skills {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        width: 50%;
+        height: 40%;
+        border: 2px dotted #000;
+        text-align: center; }
+      .container #about .skills .about_menu {
+        position: absolute;
+        top: 80%;
+        left: 20%;
+        width: 60%;
+        height: 10%;
+        border: 2px dotted #000; }
     .container #about .progression {
       position: absolute;
       top: 0;
-      left: 1333.332px;
-      width: 666px;
-      height: 666px;
+      left: 66.666%;
+      width: 33.333%;
+      height: 33.333%;
       border: 4px solid #000;
       background: #284182; }
+      .container #about .progression .header {
+        position: absolute;
+        top: 2%;
+        left: 10%;
+        width: 80%;
+        height: 10%;
+        border: 2px dotted #000;
+        text-align: center; }
+      .container #about .progression .design_skills {
+        position: absolute;
+        top: 30%;
+        left: 0;
+        width: 50%;
+        height: 40%;
+        border: 2px dotted #000;
+        text-align: center; }
+      .container #about .progression .development_skills {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        width: 50%;
+        height: 40%;
+        border: 2px dotted #000;
+        text-align: center; }
+      .container #about .progression .about_menu {
+        position: absolute;
+        top: 80%;
+        left: 20%;
+        width: 60%;
+        height: 10%;
+        border: 2px dotted #000; }
   .container #projects {
     position: absolute;
     top: 0;
@@ -361,18 +425,148 @@ body {
 @keyframes projects_flashing {
   100% {
     background: rgba(120, 21, 57, 0.3); } }
+    .container #projects .description {
+      position: absolute;
+      top: 33.333%;
+      left: 33.333%;
+      width: 33.333%;
+      height: 33.333%;
+      border: 4px solid #000;
+      background: #6B3733; }
+      .container #projects .description .header {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 80%;
+        height: 10%;
+        border: 2px dotted #000;
+        text-align: center; }
+      .container #projects .description .desc {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        width: 80%;
+        height: 50%;
+        border: 2px dotted #000;
+        text-align: center; }
+    .container #projects .proj_1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 33.333%;
+      height: 33.333%;
+      border: 4px solid #000;
+      background: #6B3733; }
+    .container #projects .proj_3 {
+      position: absolute;
+      top: 0;
+      left: 66.666%;
+      width: 33.333%;
+      height: 33.333%;
+      border: 4px solid #000;
+      background: #6B3733; }
+    .container #projects .proj_4 {
+      position: absolute;
+      top: 66.666%;
+      left: 0;
+      width: 33.333%;
+      height: 33.333%;
+      border: 4px solid #000;
+      background: #6B3733; }
+    .container #projects .proj_6 {
+      position: absolute;
+      top: 66.666%;
+      left: 66.666%;
+      width: 33.333%;
+      height: 33.333%;
+      border: 4px solid #000;
+      background: #6B3733; }
+    .container #projects .proj .header {
+      position: absolute;
+      top: 2%;
+      left: 10%;
+      width: 80%;
+      height: 6%;
+      border: 2px dotted #000;
+      text-align: center; }
+    .container #projects .proj .imgs_section {
+      position: absolute;
+      top: 15%;
+      left: 0;
+      width: 40%;
+      height: 70%;
+      border: 2px dotted #000;
+      text-align: center; }
+    .container #projects .proj .desc_section {
+      position: absolute;
+      top: 15%;
+      left: 40%;
+      width: 60%;
+      height: 70%;
+      border: 2px dotted #000;
+      text-align: center; }
+    .container #projects .proj .project_link {
+      position: absolute;
+      top: 88%;
+      left: 10%;
+      width: 80%;
+      height: 6%;
+      border: 2px dotted #000;
+      text-align: center; }
   .container #contact {
     position: absolute;
     top: 66.666%;
     left: 0;
     width: 33.333%;
     height: 33.333%;
+    color: #DDD;
     border: 4px solid #000;
     background: rgba(29, 92, 79, 0.1);
     animation-name: contact_flashing;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate; }
+    .container #contact .fa {
+      position: absolute;
+      top: 40%;
+      font-size: 40px; }
+    .container #contact .contact {
+      position: absolute;
+      top: 30%;
+      left: 10%;
+      width: 80%;
+      height: 20%;
+      border: 2px dotted #000; }
+      .container #contact .contact .fa-at {
+        top: 36%;
+        left: 35%; }
+      .container #contact .contact .fa-mobile {
+        top: 56%;
+        left: 35.5%; }
+    .container #contact .socialmedia {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      width: 80%;
+      height: 20%;
+      border: 2px dotted #000; }
+      .container #contact .socialmedia .fa-twitter-square {
+        color: #EEE;
+        left: 3%; }
+      .container #contact .socialmedia .fa-facebook-square {
+        color: #EEE;
+        left: 23%; }
+      .container #contact .socialmedia .fa-youtube-square {
+        color: #EEE;
+        left: 43%; }
+      .container #contact .socialmedia .fa-github-square {
+        color: #EEE;
+        left: 63%; }
+      .container #contact .socialmedia .fa-codepen {
+        color: #EEE;
+        left: 83%; }
+    .container #contact .contact span, .container #contact .socialmedia span {
+      font-size: 25px; }
 @keyframes contact_flashing {
   100% {
     background: rgba(29, 92, 79, 0.3); } }
