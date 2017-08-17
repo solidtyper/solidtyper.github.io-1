@@ -189,7 +189,8 @@ body {
   width: 6000px;
   z-index: 1;
   height: 6000px;
-  transition: 4s all ease-in; }
+  transition: 4s all ease-in;
+  color: #EEE; }
   .container #welcome {
     position: absolute;
     top: 33.333%;
@@ -286,7 +287,6 @@ body {
     left: 0;
     width: 33.333%;
     height: 33.333%;
-    border: 4px solid #000;
     background: rgba(0, 0, 255, 0.1);
     animation-name: about_flashing;
     animation-duration: 2s;
@@ -297,119 +297,115 @@ body {
     background: rgba(0, 0, 255, 0.3); } }
     .container #about #about_description {
       position: absolute;
-      top: 44.444%;
+      top: 55.555%;
       left: 33.333%;
       width: 33.333%;
       height: 33.333%;
-      border: 4px solid #000;
       background: #284182; }
-      .container #about #about_description .header {
-        position: absolute;
-        top: 2%;
-        left: 10%;
+      .container #about #about_description .desc_header {
         width: 80%;
         height: 10%;
-        border: 2px dotted #000;
-        text-align: center; }
+        text-align: center;
+        font-size: 40px;
+        margin: 2% auto; }
       .container #about #about_description .img {
-        position: absolute;
-        top: 20%;
-        left: 0;
-        width: 40%;
+        width: 38%;
         height: 40%;
-        border: 2px dotted #000; }
+        margin-top: 10%;
+        margin-left: 2%;
+        background-image: url("../imgs/nice-pic.jpg");
+        float: left;
+        background-size: cover; }
       .container #about #about_description .paragraph {
-        position: absolute;
-        top: 20%;
-        left: 45%;
-        width: 55%;
-        height: 40%;
-        border: 2px dotted #000; }
-      .container #about #about_description .about_menu {
-        position: absolute;
-        top: 80%;
-        left: 20%;
-        width: 60%;
-        height: 10%;
-        border: 2px dotted #000; }
+        width: 53%;
+        margin-top: 10%;
+        margin-right: 3%;
+        float: right;
+        font-size: 15px; }
     .container #about .skills {
       position: absolute;
       top: 0;
       left: 0;
       width: 33.333%;
       height: 33.333%;
-      border: 4px solid #000;
       background: #284182; }
       .container #about .skills .header {
-        position: absolute;
-        top: 2%;
-        left: 10%;
         width: 80%;
         height: 10%;
-        border: 2px dotted #000;
+        margin: 2% auto;
+        font-size: 40px;
         text-align: center; }
       .container #about .skills .design_skills {
-        position: absolute;
-        top: 30%;
-        left: 0;
-        width: 50%;
+        width: 48%;
         height: 40%;
-        border: 2px dotted #000;
-        text-align: center; }
+        margin-left: 2%;
+        margin-top: 20%;
+        float: left; }
+        .container #about .skills .design_skills .header {
+          text-align: center;
+          font-size: 25px;
+          text-decoration: underline; }
+        .container #about .skills .design_skills ul {
+          margin-left: 4%;
+          margin-top: 20%; }
+          .container #about .skills .design_skills ul li {
+            padding-bottom: 4%; }
       .container #about .skills .development_skills {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        width: 50%;
+        width: 48%;
         height: 40%;
-        border: 2px dotted #000;
-        text-align: center; }
-      .container #about .skills .about_menu {
-        position: absolute;
-        top: 80%;
-        left: 20%;
-        width: 60%;
-        height: 10%;
-        border: 2px dotted #000; }
+        float: right;
+        margin-right: 2%;
+        margin-top: 20%; }
+        .container #about .skills .development_skills .header {
+          text-align: center;
+          font-size: 25px;
+          text-decoration: underline; }
+        .container #about .skills .development_skills ul {
+          margin-left: 4%;
+          margin-top: 20%; }
+          .container #about .skills .development_skills ul li {
+            padding-bottom: 4%; }
     .container #about .progression {
       position: absolute;
       top: 0;
       left: 66.666%;
       width: 33.333%;
       height: 33.333%;
-      border: 4px solid #000;
       background: #284182; }
       .container #about .progression .header {
-        position: absolute;
-        top: 2%;
-        left: 10%;
         width: 80%;
         height: 10%;
-        border: 2px dotted #000;
+        margin: 2% auto;
+        font-size: 40px;
         text-align: center; }
       .container #about .progression .design_skills {
-        position: absolute;
-        top: 30%;
-        left: 0;
         width: 50%;
-        height: 40%;
-        border: 2px dotted #000;
-        text-align: center; }
+        float: left;
+        margin-top: 20%; }
+        .container #about .progression .design_skills .header {
+          text-align: center;
+          font-size: 25px;
+          text-decoration: underline;
+          font-size: 25px; }
+        .container #about .progression .design_skills ul {
+          margin-top: 20%;
+          margin-left: 4%; }
+          .container #about .progression .design_skills ul li {
+            padding-bottom: 10%; }
       .container #about .progression .development_skills {
-        position: absolute;
-        top: 30%;
-        left: 50%;
         width: 50%;
-        height: 40%;
-        border: 2px dotted #000;
-        text-align: center; }
-      .container #about .progression .about_menu {
-        position: absolute;
-        top: 80%;
-        left: 20%;
-        width: 60%;
-        height: 10%;
-        border: 2px dotted #000; }
+        float: right;
+        margin-top: 20%; }
+        .container #about .progression .development_skills .header {
+          text-align: center;
+          font-size: 25px;
+          text-decoration: underline;
+          font-size: 25px; }
+        .container #about .progression .development_skills ul {
+          margin-top: 20%;
+          margin-left: 4%; }
+          .container #about .progression .development_skills ul li {
+            padding-bottom: 10%; }
   .container #projects {
     position: absolute;
     top: 0;
@@ -434,20 +430,14 @@ body {
       border: 4px solid #000;
       background: #6B3733; }
       .container #projects #proj_description .header {
-        position: absolute;
-        top: 20%;
-        left: 10%;
         width: 80%;
         height: 10%;
-        border: 2px dotted #000;
+        margin: 15% auto;
         text-align: center; }
       .container #projects #proj_description .desc {
-        position: absolute;
-        top: 40%;
-        left: 10%;
         width: 80%;
         height: 50%;
-        border: 2px dotted #000;
+        margin: 15% auto;
         text-align: center; }
     .container #projects .proj_1 {
       position: absolute;
@@ -455,64 +445,86 @@ body {
       left: 0;
       width: 33.333%;
       height: 33.333%;
-      border: 4px solid #000;
       background: #6B3733; }
+      .container #projects .proj_1 .img_1 {
+        background-image: url("../imgs/owl.png"); }
+      .container #projects .proj_1 .img_2 {
+        background-image: url("../imgs/alternative_skull.png"); }
+      .container #projects .proj_1 .img_3 {
+        background-image: url("../imgs/fused_glass.png"); }
     .container #projects .proj_3 {
       position: absolute;
       top: 0;
       left: 66.666%;
       width: 33.333%;
       height: 33.333%;
-      border: 4px solid #000;
       background: #6B3733; }
+      .container #projects .proj_3 .img_1 {
+        background-image: url("../imgs/owl.png"); }
+      .container #projects .proj_3 .img_2 {
+        background-image: url("../imgs/alternative_skull.png"); }
+      .container #projects .proj_3 .img_3 {
+        background-image: url("../imgs/fused_glass.png"); }
     .container #projects .proj_4 {
       position: absolute;
       top: 66.666%;
       left: 0;
       width: 33.333%;
       height: 33.333%;
-      border: 4px solid #000;
       background: #6B3733; }
+      .container #projects .proj_4 .img_1 {
+        background-image: url("../imgs/owl.png"); }
+      .container #projects .proj_4 .img_2 {
+        background-image: url("../imgs/alternative_skull.png"); }
+      .container #projects .proj_4 .img_3 {
+        background-image: url("../imgs/fused_glass.png"); }
     .container #projects .proj_6 {
       position: absolute;
       top: 66.666%;
       left: 66.666%;
       width: 33.333%;
       height: 33.333%;
-      border: 4px solid #000;
       background: #6B3733; }
+      .container #projects .proj_6 .img_1 {
+        background-image: url("../imgs/owl.png"); }
+      .container #projects .proj_6 .img_2 {
+        background-image: url("../imgs/alternative_skull.png"); }
+      .container #projects .proj_6 .img_3 {
+        background-image: url("../imgs/fused_glass.png"); }
     .container #projects .proj .header {
-      position: absolute;
-      top: 2%;
-      left: 10%;
       width: 80%;
-      height: 6%;
-      border: 2px dotted #000;
-      text-align: center; }
+      height: 9%;
+      margin: 2% auto;
+      text-align: center;
+      font-size: 40px; }
     .container #projects .proj .imgs_section {
-      position: absolute;
-      top: 15%;
-      left: 0;
-      width: 40%;
+      width: 38%;
       height: 70%;
-      border: 2px dotted #000;
-      text-align: center; }
+      margin-top: 3%;
+      margin-left: 2%;
+      float: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .container #projects .proj .imgs_section .img_1, .container #projects .proj .imgs_section .img_2, .container #projects .proj .imgs_section .img_3 {
+        width: 100%;
+        height: 30%;
+        background-size: 100% 100%; }
     .container #projects .proj .desc_section {
-      position: absolute;
-      top: 15%;
-      left: 40%;
-      width: 60%;
+      width: 54%;
       height: 70%;
-      border: 2px dotted #000;
+      margin-top: 3%;
+      margin-right: 2%;
+      float: right;
       text-align: center; }
     .container #projects .proj .project_link {
       position: absolute;
-      top: 88%;
+      top: 90%;
       left: 10%;
       width: 80%;
       height: 6%;
-      border: 2px dotted #000;
-      text-align: center; }
+      text-align: center;
+      border: 1px solid #000; }
   .container #contact {
     position: absolute;
     top: 66.666%;
@@ -528,43 +540,45 @@ body {
     animation-direction: alternate; }
     .container #contact .fa {
       position: absolute;
-      top: 40%;
       font-size: 40px; }
     .container #contact #contact_me {
       position: absolute;
-      top: 30%;
-      left: 10%;
-      width: 80%;
-      height: 20%;
-      border: 2px dotted #000; }
+      top: 33.333%;
+      left: 33.333%;
+      width: 33.333%;
+      height: 16.6665%;
+      border: 2px solid #1D5C4F; }
       .container #contact #contact_me .fa-at {
         top: 36%;
-        left: 35%; }
+        left: 20%;
+        color: #1D5C4F; }
       .container #contact #contact_me .fa-mobile {
         top: 56%;
-        left: 35.5%; }
+        left: 20.5%;
+        color: #1D5C4F; }
     .container #contact .socialmedia {
       position: absolute;
-      top: 50%;
-      left: 10%;
-      width: 80%;
-      height: 20%;
-      border: 2px dotted #000; }
+      top: 49.9995%;
+      left: 33.333%;
+      width: 33.333%;
+      height: 16.6665%;
+      background: #1D5C4F; }
       .container #contact .socialmedia .fa-twitter-square {
-        color: #EEE;
-        left: 3%; }
+        color: #00aced;
+        top: 30%;
+        left: 13%; }
       .container #contact .socialmedia .fa-facebook-square {
-        color: #EEE;
-        left: 23%; }
-      .container #contact .socialmedia .fa-youtube-square {
-        color: #EEE;
-        left: 43%; }
+        color: #1D2B66;
+        top: 60%;
+        left: 13%; }
       .container #contact .socialmedia .fa-github-square {
-        color: #EEE;
+        color: #24292e;
+        top: 30%;
         left: 63%; }
       .container #contact .socialmedia .fa-codepen {
         color: #EEE;
-        left: 83%; }
+        top: 60%;
+        left: 63%; }
     .container #contact #contact_me span, .container #contact .socialmedia span {
       font-size: 25px; }
 @keyframes contact_flashing {
