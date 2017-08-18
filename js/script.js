@@ -101,3 +101,9 @@ function page_status(hash){
     }
 
 }
+
+function img_view(img_name){
+  var img_name;
+  window.location.href = 'imgs/'+img_name
+
+}

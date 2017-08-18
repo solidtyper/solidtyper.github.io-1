@@ -4,29 +4,30 @@
     <title>anas ouardini</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="icon" href="imgs/avatar.png">
     <script src="js/script.js"></script>
   </head>
   <body>
     <!-- fixed elements-->
-    <div class="overlay"></div>
+    <div onclick="menu_animate()" class="overlay"></div>
     <div class="owner">
-      <div class="avatar"></div>
-      <div class="name"></div>
+      <div onclick="img_view(&quot;avatar.png&quot;)" class="avatar"></div>
+      <div class="name">anas ouardini</div>
     </div>
     <div id="menu" class="menuBar">
       <div onclick="menu_animate()" class="outer_circle">
         <div id="button" class="inner_circle"></div>
       </div><a href="#w_content">
-        <div onclick="page_status(&quot;welcome&quot;)" class="welcome">welcome
+        <div onclick="page_status(&quot;welcome&quot;)" class="option welcome">welcome
           <div class="page_on"></div>
         </div></a><a href="#about_description">
-        <div onclick="page_status(&quot;about&quot;)" class="about">about
+        <div onclick="page_status(&quot;about&quot;)" class="option about">about
           <div class="page_off"></div>
         </div></a><a href="#proj_description">
-        <div onclick="page_status(&quot;projects&quot;)" class="projects">projects
+        <div onclick="page_status(&quot;projects&quot;)" class="option projects">projects
           <div class="page_off"></div>
         </div></a><a href="#contact_me">
-        <div onclick="page_status(&quot;contact&quot;)" class="contact">contact
+        <div onclick="page_status(&quot;contact&quot;)" class="option contact">contact
           <div class="page_off"></div>
         </div></a>
     </div>
@@ -44,9 +45,12 @@
         </div>
       </div>
       <div id="about">
+        <div class="about_bg_top"></div>
+        <div class="about_bg_bottom"></div>
+        <div class="about_bg_right"></div>
         <div id="about_description">
           <div class="desc_header">about me</div>
-          <div class="img"></div>
+          <div onclick="img_view(&quot;nice_pic.png&quot;)" class="img"></div>
           <div class="paragraph">
             <p>
                
@@ -55,6 +59,8 @@
             <p>Et molestie epicurei percipit has, eos causae oporteat percipitur id. Cu sed error torquatos, persius meliore neglegentur at quo. Id enim probatus qualisque duo, in partem veritus eos. Ad quas interesset cum, vim vidisse moderatius ne. Quando principes reprehendunt an quo, cu vis placerat sadipscing.</p>
           </div>
         </div>
+        <div class="skills_bg_top"></div>
+        <div class="skills_bg_bottom"></div>
         <div class="skills">
           <div class="header">my skills</div>
           <div class="design_skills">
@@ -76,6 +82,8 @@
             </ul>
           </div>
         </div>
+        <div class="progression_bg_top"></div>
+        <div class="progression_bg_bottom"></div>
         <div class="progression">
           <div class="header">my skills progression</div>
           <div class="design_skills">
@@ -99,18 +107,23 @@
         </div>
       </div>
       <div id="projects">
+        <div class="proj_desc_bg_top_left"></div>
+        <div class="proj_desc_bg_bottom_left"></div>
+        <div class="proj_desc_bg_right"></div>
         <div id="proj_description">
           <div class="header">about these projects</div>
           <div class="desc"> 
             <p>Lorem ipsum dolor sit amet, pri iusto partiendo at, ei facer homero eos. Duo eu tractatos philosophia, ne libris meliore per. Corrumpit definitiones cu his. Saperet appareat vivendum vix cu, fierent repudiare ut vix, solum summo verear mea ex. Congue lucilius pri an. Ius te commune corrumpit, an mel inimicus explicari.</p>
           </div>
         </div>
+        <div class="proj1_bg_top"></div>
+        <div class="proj1_bg_bottom"></div>
         <div class="proj proj_1">
           <div class="header">project 1</div>
           <div class="imgs_section">
-            <div class="img_1"></div>
-            <div class="img_2"></div>
-            <div class="img_3"></div>
+            <div onclick="img_view(&quot;owl.png&quot;)" class="img_1"></div>
+            <div onclick="img_view(&quot;alternative_skull.png&quot;)" class="img_2"></div>
+            <div onclick="img_view(&quot;fused_glass.png&quot;)" class="img_3"></div>
           </div>
           <div class="desc_section">
             <div class="p1">
@@ -130,15 +143,16 @@
               //h2
               //p
           //.project_link
-          
           -->
         </div>
+        <div class="proj3_bg_top"></div>
+        <div class="proj3_bg_bottom"></div>
         <div class="proj proj_3">
           <div class="header">project 2</div>
           <div class="imgs_section">
-            <div class="img_1"></div>
-            <div class="img_2"></div>
-            <div class="img_3"></div>
+            <div onclick="img_view(&quot;owl.png&quot;)" class="img_1"></div>
+            <div onclick="img_view(&quot;alternative_skull.png&quot;)" class="img_2"></div>
+            <div onclick="img_view(&quot;fused_glass.png&quot;)" class="img_3"></div>
           </div>
           <div class="desc_section">
             <div class="p1">
@@ -148,12 +162,14 @@
           </div>
           <div class="project_link">live view of the project</div>
         </div>
+        <div class="proj4_bg_top"></div>
+        <div class="proj4_bg_bottom"></div>
         <div class="proj proj_4">
           <div class="header">project 3</div>
           <div class="imgs_section">
-            <div class="img_1"></div>
-            <div class="img_2"></div>
-            <div class="img_3"></div>
+            <div onclick="img_view(&quot;owl.png&quot;)" class="img_1"></div>
+            <div onclick="img_view(&quot;alternative_skull.png&quot;)" class="img_2"></div>
+            <div onclick="img_view(&quot;fused_glass.png&quot;)" class="img_3"></div>
           </div>
           <div class="desc_section">
             <div class="p1">
@@ -176,12 +192,14 @@
         //.project_link
         
         -->
+        <div class="proj6_bg_top"></div>
+        <div class="proj6_bg_bottom"></div>
         <div class="proj proj_6">
           <div class="header">project 4</div>
           <div class="imgs_section">
-            <div class="img_1"></div>
-            <div class="img_2"></div>
-            <div class="img_3"></div>
+            <div onclick="img_view(&quot;owl.png&quot;)" class="img_1"></div>
+            <div onclick="img_view(&quot;alternative_skull.png&quot;)" class="img_2"></div>
+            <div onclick="img_view(&quot;fused_glass.png&quot;)" class="img_3"></div>
           </div>
           <div class="desc_section">
             <div class="p1">
