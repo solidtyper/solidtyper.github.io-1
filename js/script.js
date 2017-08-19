@@ -14,7 +14,7 @@ window.onload = function(){
       default:window.scrollTo(2392,2500);location.href = '#welcome_'
     }*/
 
-    window.scrollTo(2392,2500);
+    window.scrollTo(4417,4447);
 
     setTimeout(function(){
       document.getElementById('welcome').children[0].children[1].children[0].classList.add('welcome_sign_up')
@@ -75,7 +75,7 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
         window.location.href = '#welcome_';
-        window.scrollTo(2392,2500);
+        window.scrollTo(4417,4447);
 
         break;
 
@@ -93,7 +93,7 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
         window.location.href = '#about';
-        window.scrollTo(385, 971);
+        window.scrollTo(1000, 1722);
 
       break;
 
@@ -110,8 +110,8 @@ function page_status(hash){
         document.getElementById('menu').children[3].children[0].classList.add('selected_option');
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
-        window.location.href = '#about';
-        window.scrollTo(4375, 940);
+        window.location.href = '#projects';
+        window.scrollTo(7711, 1710);
 
         break;
 
@@ -129,7 +129,7 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.add('selected_option');
 
         window.location.href = '#contact';
-        window.scrollTo(376, 4548);
+        window.scrollTo(1008, 7811);
 
     }
 
@@ -145,15 +145,15 @@ function about_navigator(to_where){
   switch(to_where){
     case 'about':
       /*window.location.href = '#about_me' ;*/
-      window.scrollTo(385, 971);
+      window.scrollTo(1000, 1722);
       break;
     case 'skills':
       /*window.location.href = '#skills' ;*/
-      window.scrollTo(0, 0);
+      window.scrollTo(56, 193);
       break;
     case 'progression':
     /*  window.location.href = '#progression' ;*/
-      window.scrollTo(1045, 0);
+      window.scrollTo(1944, 216);
       break;
   }
 }
@@ -163,15 +163,15 @@ function projs_navigator(to_where){
   switch(to_where){
     case 'about_projs':
       /*window.location.href = '#about_projs' ;*/
-      window.scrollTo(4375, 940);
+      window.scrollTo(7711, 1710);
       break;
     case 'proj_1':
       /*window.location.href = '#proj_1' ;*/
-      window.scrollTo(3701, 0);
+      window.scrollTo(8671, 216);
       break;
     case 'proj_2':
       /*window.location.href = '#proj_3' ;*/
-      window.scrollTo(4737, 0);
+      window.scrollTo(6776, 216);
   }
 }
 

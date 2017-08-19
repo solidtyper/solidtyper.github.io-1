@@ -189,9 +189,9 @@ body {
     top: 325px; } }
 .container {
   position: relative;
-  width: 6000px;
+  width: 10000px;
   z-index: 1;
-  height: 6000px;
+  height: 10000px;
   transition: 4s all ease-in;
   color: #EEE; }
   .container #welcome {
@@ -210,10 +210,10 @@ body {
     background: rgba(255, 255, 255, 0.4); } }
     .container #welcome .welcome_content_container {
       position: absolute;
-      top: 33.333%;
-      left: 33.333%;
-      width: 33.333%;
-      height: 33.333%;
+      top: 37.333%;
+      left: 40%;
+      width: 19.9999%;
+      height: 19.9999%;
       border-left: 4px solid #EEE;
       border-right: 4px solid #EEE; }
       .container #welcome .welcome_content_container .welcome_port {
@@ -302,21 +302,21 @@ body {
     .container #about .about_bg_right {
       position: absolute;
       top: 55.555%;
-      left: 33.333%;
+      left: 38.333%;
       border-right: 666.66px solid #304F9C;
       border-top: 666.66px solid transparent;
       border-bottom: 0 solid transparent; }
     .container #about .about_bg_top {
       position: absolute;
       top: 55.555%;
-      left: 33.333%;
+      left: 38.333%;
       background: #284282;
-      width: 33.333%;
-      height: 33.333%; }
+      width: 19.9999%;
+      height: 19.9999%; }
     .container #about .about_bg_bottom {
       position: absolute;
       top: 60%;
-      left: 33.333%;
+      left: 38.333%;
       border-left: 666.64px solid rgba(57, 93, 186, 0.2);
       border-top: 444px solid transparent;
       border-bottom: 0 solid transparent; }
@@ -324,7 +324,7 @@ body {
         content: "";
         position: absolute;
         left: -666.64px;
-        height: 133px;
+        height: 75px;
         width: 666.64px;
         background: rgba(57, 93, 186, 0.2); }
     .container #about .about_nav {
@@ -362,9 +362,9 @@ body {
     .container #about #about_description {
       position: absolute;
       top: 55.555%;
-      left: 33.333%;
-      width: 33.333%;
-      height: 33.333%; }
+      left: 38.333%;
+      width: 19.9999%;
+      height: 19.9999%; }
       .container #about #about_description .img {
         width: 38%;
         height: 40%;
@@ -379,15 +379,15 @@ body {
         font-size: 15px; }
     .container #about .skills_bg_top {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 10%;
+      left: 10%;
       background: #284282;
-      width: 33.333%;
-      height: 33.333%; }
+      width: 19.9999%;
+      height: 19.9999%; }
     .container #about .skills_bg_bottom {
       position: absolute;
-      top: 4.38%;
-      left: 0;
+      top: 14.38%;
+      left: 10%;
       border-left: 666.64px solid rgba(57, 93, 186, 0.2);
       border-top: 444px solid transparent;
       border-bottom: 0 solid transparent; }
@@ -395,15 +395,15 @@ body {
         content: "";
         position: absolute;
         left: -666.64px;
-        height: 133px;
+        height: 75px;
         width: 666.64px;
         background: rgba(57, 93, 186, 0.2); }
     .container #about .skills {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 33.333%;
-      height: 33.333%; }
+      top: 10%;
+      left: 10%;
+      width: 19.9999%;
+      height: 19.9999%; }
       .container #about .skills .header {
         width: 80%;
         height: 10%;
@@ -442,14 +442,14 @@ body {
             padding-bottom: 4%; }
     .container #about .progression_bg_top {
       position: absolute;
-      top: 0;
+      top: 10%;
       left: 66.666%;
       background: #284282;
-      width: 33.333%;
-      height: 33.333%; }
+      width: 19.9999%;
+      height: 19.9999%; }
     .container #about .progression_bg_bottom {
       position: absolute;
-      top: 4.38%;
+      top: 14.38%;
       left: 66.666%;
       border-left: 666.64px solid rgba(57, 93, 186, 0.2);
       border-top: 444px solid transparent;
@@ -458,15 +458,15 @@ body {
         content: "";
         position: absolute;
         left: -666.64px;
-        height: 133px;
+        height: 75px;
         width: 666.64px;
         background: rgba(57, 93, 186, 0.2); }
     .container #about .progression {
       position: absolute;
-      top: 0;
+      top: 10%;
       left: 66.666%;
-      width: 33.333%;
-      height: 33.333%; }
+      width: 19.9999%;
+      height: 19.9999%; }
       .container #about .progression .header {
         width: 80%;
         height: 10%;
@@ -515,34 +515,6 @@ body {
 @keyframes projects_flashing {
   100% {
     background: rgba(120, 21, 57, 0.3); } }
-    .container #projects .proj_desc_bg_right {
-      position: absolute;
-      top: 55.555%;
-      left: 33.333%;
-      border-right: 666.66px solid #82433E;
-      border-top: 666.66px solid transparent;
-      border-bottom: 0 solid transparent; }
-    .container #projects .proj_desc_bg_top_left {
-      position: absolute;
-      top: 55.555%;
-      left: 33.333%;
-      background: #6B3733;
-      width: 33.333%;
-      height: 33.333%; }
-    .container #projects .proj_desc_bg_bottom_left {
-      position: absolute;
-      top: 59.935%;
-      left: 33.333%;
-      border-left: 666.64px solid rgba(191, 98, 91, 0.1);
-      border-top: 444px solid transparent;
-      border-bottom: 0 solid transparent; }
-      .container #projects .proj_desc_bg_bottom_left::after {
-        content: "";
-        position: absolute;
-        left: -666.64px;
-        height: 133px;
-        width: 666.64px;
-        background: rgba(191, 98, 91, 0.1); }
     .container #projects .projs_nav {
       position: absolute;
       width: 100%;
@@ -567,12 +539,40 @@ body {
         border-left: 4px solid #000; }
       .container #projects .projs_nav .proj2_option {
         border-right: 4px solid #000; }
+    .container #projects .proj_desc_bg_right {
+      position: absolute;
+      top: 55.555%;
+      left: 40.333%;
+      border-right: 666.66px solid #82433E;
+      border-top: 666.66px solid transparent;
+      border-bottom: 0 solid transparent; }
+    .container #projects .proj_desc_bg_top_left {
+      position: absolute;
+      top: 55.555%;
+      left: 40.333%;
+      background: #6B3733;
+      width: 19.9999%;
+      height: 19.9999%; }
+    .container #projects .proj_desc_bg_bottom_left {
+      position: absolute;
+      top: 59.935%;
+      left: 40.333%;
+      border-left: 666.64px solid rgba(191, 98, 91, 0.1);
+      border-top: 444px solid transparent;
+      border-bottom: 0 solid transparent; }
+      .container #projects .proj_desc_bg_bottom_left::after {
+        content: "";
+        position: absolute;
+        left: -666.64px;
+        height: 75px;
+        width: 666.64px;
+        background: rgba(191, 98, 91, 0.1); }
     .container #projects #proj_description {
       position: absolute;
       top: 55.555%;
-      left: 33.333%;
-      width: 33.333%;
-      height: 33.333%; }
+      left: 40.333%;
+      width: 19.9999%;
+      height: 19.9999%; }
       .container #projects #proj_description .header {
         width: 80%;
         height: 10%;
@@ -585,15 +585,15 @@ body {
         text-align: center; }
     .container #projects .proj1_bg_top {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 10%;
+      left: 12%;
       background: #6B3733;
-      width: 33.333%;
-      height: 33.333%; }
+      width: 19.9999%;
+      height: 19.9999%; }
     .container #projects .proj1_bg_bottom {
       position: absolute;
-      top: 4.38%;
-      left: 0;
+      top: 14.38%;
+      left: 12%;
       border-left: 666.64px solid rgba(191, 98, 91, 0.1);
       border-top: 444px solid transparent;
       border-bottom: 0 solid transparent; }
@@ -601,15 +601,15 @@ body {
         content: "";
         position: absolute;
         left: -666.64px;
-        height: 133px;
+        height: 75px;
         width: 666.64px;
         background: rgba(191, 98, 91, 0.1); }
     .container #projects .proj_1 {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 33.333%;
-      height: 33.333%; }
+      top: 10%;
+      left: 12%;
+      width: 19.9999%;
+      height: 19.9999%; }
       .container #projects .proj_1 .img_1 {
         background-image: url("../imgs/owl.png"); }
       .container #projects .proj_1 .img_2 {
@@ -618,15 +618,15 @@ body {
         background-image: url("../imgs/fused_glass.png"); }
     .container #projects .proj2_bg_top {
       position: absolute;
-      top: 0;
-      left: 66.666%;
+      top: 10%;
+      left: 68.666%;
       background: #6B3733;
-      width: 33.333%;
-      height: 33.333%; }
+      width: 19.9999%;
+      height: 19.9999%; }
     .container #projects .proj2_bg_bottom {
       position: absolute;
-      top: 4.38%;
-      left: 66.666%;
+      top: 14.38%;
+      left: 68.666%;
       border-left: 666.64px solid rgba(191, 98, 91, 0.1);
       border-top: 444px solid transparent;
       border-bottom: 0 solid transparent; }
@@ -634,15 +634,15 @@ body {
         content: "";
         position: absolute;
         left: -666.64px;
-        height: 133px;
+        height: 75px;
         width: 666.64px;
         background: rgba(191, 98, 91, 0.1); }
     .container #projects .proj_2 {
       position: absolute;
-      top: 0;
-      left: 66.666%;
-      width: 33.333%;
-      height: 33.333%; }
+      top: 10%;
+      left: 68.666%;
+      width: 19.9999%;
+      height: 19.9999%; }
       .container #projects .proj_2 .img_1 {
         background-image: url("../imgs/owl.png"); }
       .container #projects .proj_2 .img_2 {
@@ -707,51 +707,55 @@ body {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate; }
-    .container #contact .fa {
+    .container #contact .contact_container {
       position: absolute;
-      font-size: 40px; }
-    .container #contact #contact_me {
-      position: absolute;
-      top: 33.333%;
-      left: 33.333%;
-      width: 33.333%;
-      height: 16.6665%;
-      border: 2px solid #1D5C4F; }
-      .container #contact #contact_me .fa-at {
-        top: 36%;
-        left: 20%;
-        color: #1D5C4F; }
-      .container #contact #contact_me .fa-mobile {
-        top: 56%;
-        left: 20.5%;
-        color: #1D5C4F; }
-    .container #contact .socialmedia {
-      position: absolute;
-      top: 49.9995%;
-      left: 33.333%;
-      width: 33.333%;
-      height: 16.6665%;
-      background: #1D5C4F; }
-      .container #contact .socialmedia .fa-twitter-square {
-        color: #00aced;
-        top: 30%;
-        left: 13%; }
-      .container #contact .socialmedia .fa-facebook-square {
-        color: #1D2B66;
-        top: 60%;
-        left: 13%; }
-      .container #contact .socialmedia .fa-github-square {
-        color: #24292e;
-        top: 30%;
-        left: 63%; }
-      .container #contact .socialmedia .fa-codepen {
-        color: #EEE;
-        top: 60%;
-        left: 63%; }
-    .container #contact #contact_me span, .container #contact .socialmedia span {
-      font-size: 25px; }
-      .container #contact #contact_me span:hover, .container #contact .socialmedia span:hover {
-        text-decoration: underline; }
+      top: 38.333%;
+      left: 38.333%;
+      width: 19.9999%;
+      height: 19.9999%;
+      border: 2px solid #1D5C4F;
+      display: flex;
+      flex-direction: column; }
+      .container #contact .contact_container .fa {
+        position: absolute;
+        font-size: 40px; }
+      .container #contact .contact_container #contact_me {
+        position: relative;
+        width: 100%;
+        height: 50%; }
+        .container #contact .contact_container #contact_me .fa-at {
+          top: 36%;
+          left: 20%;
+          color: #1D5C4F; }
+        .container #contact .contact_container #contact_me .fa-mobile {
+          top: 56%;
+          left: 20.5%;
+          color: #1D5C4F; }
+      .container #contact .contact_container .socialmedia {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        background: #1D5C4F; }
+        .container #contact .contact_container .socialmedia .fa-twitter-square {
+          color: #00aced;
+          top: 30%;
+          left: 13%; }
+        .container #contact .contact_container .socialmedia .fa-facebook-square {
+          color: #1D2B66;
+          top: 60%;
+          left: 13%; }
+        .container #contact .contact_container .socialmedia .fa-github-square {
+          color: #24292e;
+          top: 30%;
+          left: 63%; }
+        .container #contact .contact_container .socialmedia .fa-codepen {
+          color: #EEE;
+          top: 60%;
+          left: 63%; }
+      .container #contact .contact_container #contact_me span, .container #contact .contact_container .socialmedia span {
+        font-size: 25px; }
+        .container #contact .contact_container #contact_me span:hover, .container #contact .contact_container .socialmedia span:hover {
+          text-decoration: underline; }
 @keyframes contact_flashing {
   100% {
     background: rgba(29, 92, 79, 0.3); } }
