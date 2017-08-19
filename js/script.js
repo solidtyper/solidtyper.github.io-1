@@ -111,7 +111,7 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
         window.location.href = '#about';
-        window.scrollTo(4380, 540);
+        window.scrollTo(4375, 540);
 
         break;
 
