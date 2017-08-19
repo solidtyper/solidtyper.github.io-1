@@ -8,7 +8,8 @@ a {
 body {
   background: #222;
   min-height: 420px;
-  z-index: -1; }
+  z-index: -1;
+  overflow: hidden; }
 
 .overlay {
   position: fixed;
@@ -541,6 +542,30 @@ body {
         height: 133px;
         width: 666.64px;
         background: rgba(191, 98, 91, 0.1); }
+    .container #projects .projs_nav {
+      position: absolute;
+      width: 100%;
+      height: 6%;
+      background: rgba(41, 153, 147, 0.5);
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      padding-top: 0.8%;
+      padding-bottom: 0.8%;
+      color: #000;
+      font-size: 20px; }
+      .container #projects .projs_nav .option {
+        width: 33.333%;
+        height: 100%;
+        border-right: 2px solid #000;
+        border-left: 2px solid #000;
+        cursor: pointer; }
+        .container #projects .projs_nav .option:hover {
+          background: #299993; }
+      .container #projects .projs_nav .projs_option {
+        border-left: 4px solid #000; }
+      .container #projects .projs_nav .proj6_option {
+        border-right: 4px solid #000; }
     .container #projects #proj_description {
       position: absolute;
       top: 33.333%;
@@ -692,13 +717,14 @@ body {
     .container #projects .proj .header {
       width: 80%;
       height: 9%;
-      margin: 2% auto;
+      margin: 14% auto;
+      margin-top: 14%;
+      margin-bottom: 6%;
       text-align: center;
       font-size: 40px; }
     .container #projects .proj .imgs_section {
-      width: 38%;
-      height: 70%;
-      margin-top: 3%;
+      width: 30%;
+      height: 60%;
       margin-left: 2%;
       float: left;
       display: flex;
@@ -722,21 +748,18 @@ body {
         .container #projects .proj .imgs_section .img_1:hover:after, .container #projects .proj .imgs_section .img_2:hover:after, .container #projects .proj .imgs_section .img_3:hover:after {
           opacity: 0.4; }
     .container #projects .proj .desc_section {
-      width: 54%;
-      height: 70%;
-      margin-top: 3%;
+      width: 60%;
+      height: 60%;
       margin-right: 2%;
       float: right;
       text-align: center; }
     .container #projects .proj .project_link {
       position: absolute;
-      top: 90%;
-      left: 10%;
-      width: 80%;
+      bottom: 0;
+      width: 100%;
       height: 6%;
       text-align: center;
-      background: #299993;
-      border: 1px solid #000; }
+      background: #299993; }
   .container #contact {
     position: absolute;
     top: 66.666%;

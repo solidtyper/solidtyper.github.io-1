@@ -1,6 +1,6 @@
 
 window.onload = function(){
-    switch(window.location.hash){
+    /*switch(window.location.hash){
       case '#welcome_':alert('welcome');window.scrollTo(2392,2500);break;
       case '#about_me':window.scrollTo(385, 971);;break;
       case '#skills':window.scrollTo(0,0);break;
@@ -12,7 +12,7 @@ window.onload = function(){
       case '#project4':window.scrollTo(2392,2500);break;
       case '#contact_me':window.scrollTo(2392,2500);break;
       default:window.scrollTo(2392,2500);location.href = '#welcome_'
-    }
+    }*/
 
     window.scrollTo(2392,2500);
 
@@ -144,22 +144,45 @@ function img_view(img_name){
 function about_navigator(to_where){
   switch(to_where){
     case 'about':
-      window.location.href = '#about_me' ;
+      /*window.location.href = '#about_me' ;*/
       window.scrollTo(385, 971);
       break;
     case 'skills':
-      window.location.href = '#skills' ;
+      /*window.location.href = '#skills' ;*/
       window.scrollTo(0, 0);
       break;
     case 'progression':
-      window.location.href = '#progression' ;
+    /*  window.location.href = '#progression' ;*/
       window.scrollTo(1045, 0);
       break;
   }
 }
 
 
-
+function projs_navigator(to_where){
+  switch(to_where){
+    case 'about_projs':
+      /*window.location.href = '#about_projs' ;*/
+      window.scrollTo(4375, 540);
+      break;
+    case 'proj_1':
+      /*window.location.href = '#proj_1' ;*/
+      window.scrollTo(3701, 0);
+      break;
+    case 'proj_3':
+      /*window.location.href = '#proj_3' ;*/
+      window.scrollTo(4737, 0);
+      break;
+    case 'proj_4':
+      /*window.location.href = '#proj_4' ;*/
+      window.scrollTo(3721, 1210);
+      break;
+    case 'proj_6':
+      /*window.location.href = '#proj_6' ;*/
+      window.scrollTo(4737, 1210);
+      break;
+  }
+}
 
 
 
