@@ -75,7 +75,7 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
         window.scrollTo(2392,2500);
-        window.loaction.href = '#welcome_';
+        window.location.href = '#welcome_';
 
         break;
 
@@ -93,7 +93,7 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
         window.scrollTo(385, 971);
-        window.loaction.href = '#about';
+        window.location.href = '#about';
 
       break;
 
@@ -111,7 +111,7 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
         window.scrollTo(4380, 540);
-        window.loaction.href = '#about';
+        window.location.href = '#about';
 
         break;
 
@@ -129,7 +129,7 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.add('selected_option');
 
         window.scrollTo(376, 4548);
-        window.loaction.href = '#contact';
+        window.location.href = '#contact';
 
     }
 
@@ -169,18 +169,9 @@ function projs_navigator(to_where){
       /*window.location.href = '#proj_1' ;*/
       window.scrollTo(3701, 0);
       break;
-    case 'proj_3':
+    case 'proj_2':
       /*window.location.href = '#proj_3' ;*/
       window.scrollTo(4737, 0);
-      break;
-    case 'proj_4':
-      /*window.location.href = '#proj_4' ;*/
-      window.scrollTo(3721, 1210);
-      break;
-    case 'proj_6':
-      /*window.location.href = '#proj_6' ;*/
-      window.scrollTo(4737, 1210);
-      break;
   }
 }
 

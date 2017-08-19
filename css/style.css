@@ -357,7 +357,8 @@ body {
       text-align: center;
       font-size: 40px;
       margin: auto;
-      margin-top: 10%; }
+      margin-top: 10%;
+      margin-bottom: 10%; }
     .container #about #about_description {
       position: absolute;
       top: 55.555%;
@@ -516,21 +517,21 @@ body {
     background: rgba(120, 21, 57, 0.3); } }
     .container #projects .proj_desc_bg_right {
       position: absolute;
-      top: 33.333%;
+      top: 55.555%;
       left: 33.333%;
       border-right: 666.66px solid #82433E;
       border-top: 666.66px solid transparent;
       border-bottom: 0 solid transparent; }
     .container #projects .proj_desc_bg_top_left {
       position: absolute;
-      top: 33.333%;
+      top: 55.555%;
       left: 33.333%;
       background: #6B3733;
       width: 33.333%;
       height: 33.333%; }
     .container #projects .proj_desc_bg_bottom_left {
       position: absolute;
-      top: 37.713%;
+      top: 59.935%;
       left: 33.333%;
       border-left: 666.64px solid rgba(191, 98, 91, 0.1);
       border-top: 444px solid transparent;
@@ -564,11 +565,11 @@ body {
           background: #299993; }
       .container #projects .projs_nav .projs_option {
         border-left: 4px solid #000; }
-      .container #projects .projs_nav .proj6_option {
+      .container #projects .projs_nav .proj2_option {
         border-right: 4px solid #000; }
     .container #projects #proj_description {
       position: absolute;
-      top: 33.333%;
+      top: 55.555%;
       left: 33.333%;
       width: 33.333%;
       height: 33.333%; }
@@ -615,104 +616,38 @@ body {
         background-image: url("../imgs/alternative_skull.png"); }
       .container #projects .proj_1 .img_3 {
         background-image: url("../imgs/fused_glass.png"); }
-    .container #projects .proj3_bg_top {
+    .container #projects .proj2_bg_top {
       position: absolute;
       top: 0;
       left: 66.666%;
       background: #6B3733;
       width: 33.333%;
       height: 33.333%; }
-    .container #projects .proj3_bg_bottom {
+    .container #projects .proj2_bg_bottom {
       position: absolute;
       top: 4.38%;
       left: 66.666%;
       border-left: 666.64px solid rgba(191, 98, 91, 0.1);
       border-top: 444px solid transparent;
       border-bottom: 0 solid transparent; }
-      .container #projects .proj3_bg_bottom::after {
+      .container #projects .proj2_bg_bottom::after {
         content: "";
         position: absolute;
         left: -666.64px;
         height: 133px;
         width: 666.64px;
         background: rgba(191, 98, 91, 0.1); }
-    .container #projects .proj_3 {
+    .container #projects .proj_2 {
       position: absolute;
       top: 0;
       left: 66.666%;
       width: 33.333%;
       height: 33.333%; }
-      .container #projects .proj_3 .img_1 {
+      .container #projects .proj_2 .img_1 {
         background-image: url("../imgs/owl.png"); }
-      .container #projects .proj_3 .img_2 {
+      .container #projects .proj_2 .img_2 {
         background-image: url("../imgs/alternative_skull.png"); }
-      .container #projects .proj_3 .img_3 {
-        background-image: url("../imgs/fused_glass.png"); }
-    .container #projects .proj4_bg_top {
-      position: absolute;
-      top: 66.666%;
-      left: 0;
-      background: #6B3733;
-      width: 33.333%;
-      height: 33.333%; }
-    .container #projects .proj4_bg_bottom {
-      position: absolute;
-      top: 71.046%;
-      left: 0;
-      border-left: 666.64px solid rgba(191, 98, 91, 0.1);
-      border-top: 444px solid transparent;
-      border-bottom: 0 solid transparent; }
-      .container #projects .proj4_bg_bottom::after {
-        content: "";
-        position: absolute;
-        left: -666.64px;
-        height: 133px;
-        width: 666.64px;
-        background: rgba(191, 98, 91, 0.1); }
-    .container #projects .proj_4 {
-      position: absolute;
-      top: 66.666%;
-      left: 0;
-      width: 33.333%;
-      height: 33.333%; }
-      .container #projects .proj_4 .img_1 {
-        background-image: url("../imgs/owl.png"); }
-      .container #projects .proj_4 .img_2 {
-        background-image: url("../imgs/alternative_skull.png"); }
-      .container #projects .proj_4 .img_3 {
-        background-image: url("../imgs/fused_glass.png"); }
-    .container #projects .proj6_bg_top {
-      position: absolute;
-      top: 66.666%;
-      left: 66.666%;
-      background: #6B3733;
-      width: 33.333%;
-      height: 33.333%; }
-    .container #projects .proj6_bg_bottom {
-      position: absolute;
-      top: 71.046%;
-      left: 66.666%;
-      border-left: 666.64px solid rgba(191, 98, 91, 0.1);
-      border-top: 444px solid transparent;
-      border-bottom: 0 solid transparent; }
-      .container #projects .proj6_bg_bottom::after {
-        content: "";
-        position: absolute;
-        left: -666.64px;
-        height: 133px;
-        width: 666.64px;
-        background: rgba(191, 98, 91, 0.1); }
-    .container #projects .proj_6 {
-      position: absolute;
-      top: 66.666%;
-      left: 66.666%;
-      width: 33.333%;
-      height: 33.333%; }
-      .container #projects .proj_6 .img_1 {
-        background-image: url("../imgs/owl.png"); }
-      .container #projects .proj_6 .img_2 {
-        background-image: url("../imgs/alternative_skull.png"); }
-      .container #projects .proj_6 .img_3 {
+      .container #projects .proj_2 .img_3 {
         background-image: url("../imgs/fused_glass.png"); }
     .container #projects .proj .header {
       width: 80%;
