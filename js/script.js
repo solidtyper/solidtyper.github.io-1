@@ -74,8 +74,8 @@ function page_status(hash){
         document.getElementById('menu').children[3].children[0].classList.remove('selected_option');
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
-        window.scrollTo(2392,2500);
         window.location.href = '#welcome_';
+        window.scrollTo(2392,2500);
 
         break;
 
@@ -92,8 +92,8 @@ function page_status(hash){
         document.getElementById('menu').children[3].children[0].classList.remove('selected_option');
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
-        window.scrollTo(385, 971);
         window.location.href = '#about';
+        window.scrollTo(385, 971);
 
       break;
 
@@ -110,8 +110,8 @@ function page_status(hash){
         document.getElementById('menu').children[3].children[0].classList.add('selected_option');
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
-        window.scrollTo(4380, 540);
         window.location.href = '#about';
+        window.scrollTo(4380, 540);
 
         break;
 
@@ -128,8 +128,8 @@ function page_status(hash){
         document.getElementById('menu').children[3].children[0].classList.remove('selected_option');
         document.getElementById('menu').children[4].children[0].classList.add('selected_option');
 
-        window.scrollTo(376, 4548);
         window.location.href = '#contact';
+        window.scrollTo(376, 4548);
 
     }
 
