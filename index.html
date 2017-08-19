@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- fixed elements-->
-    <div onclick="menu_animate()" class="overlay"></div>
+    <div onclick="menu_appearance_cancel()" class="overlay"></div>
     <div class="owner">
       <div onclick="img_view(&quot;avatar.png&quot;)" class="avatar"></div>
       <div class="name">anas ouardini</div>
@@ -16,16 +16,16 @@
     <div id="menu" class="menuBar">
       <div onclick="menu_animate()" class="outer_circle">
         <div id="button" class="inner_circle"></div>
-      </div><a href="#w_content">
+      </div><a>
         <div onclick="page_status(&quot;welcome&quot;)" class="option welcome">welcome
           <div class="page_on"></div>
-        </div></a><a href="#about_description">
+        </div></a><a>
         <div onclick="page_status(&quot;about&quot;)" class="option about">about
           <div class="page_off"></div>
-        </div></a><a href="#proj_description">
+        </div></a><a>
         <div onclick="page_status(&quot;projects&quot;)" class="option projects">projects
           <div class="page_off"></div>
-        </div></a><a href="#contact_me">
+        </div></a><a>
         <div onclick="page_status(&quot;contact&quot;)" class="option contact">contact
           <div class="page_off"></div>
         </div></a>
@@ -45,8 +45,8 @@
       </div>
       <div id="about">
         <div class="about_bg_top"></div>
+        <div class="about_bg_right"> </div>
         <div class="about_bg_bottom"></div>
-        <div class="about_bg_right"></div>
         <div id="about_description">
           <div class="about_nav">
             <div onclick="about_navigator(&quot;about&quot;)" class="option ab_option">about me</div>
@@ -122,8 +122,8 @@
       </div>
       <div id="projects">
         <div class="proj_desc_bg_top_left"></div>
-        <div class="proj_desc_bg_bottom_left"></div>
         <div class="proj_desc_bg_right"></div>
+        <div class="proj_desc_bg_bottom_left"></div>
         <div id="proj_description">
           <div class="header">about these projects</div>
           <div class="desc"> 

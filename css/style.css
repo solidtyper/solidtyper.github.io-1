@@ -89,6 +89,7 @@ body {
   opacity: 0;
   background: #BDCAEB;
   color: #999;
+  cursor: pointer;
   font-size: 20px;
   padding-left: 40px;
   padding-top: 4px;
@@ -106,6 +107,7 @@ body {
   opacity: 0;
   background: #385CB8;
   color: #999;
+  cursor: pointer;
   font-size: 20px;
   padding-left: 40px;
   padding-top: 4px;
@@ -123,6 +125,7 @@ body {
   opacity: 0;
   background: #A3534E;
   color: #999;
+  cursor: pointer;
   font-size: 20px;
   padding-left: 40px;
   padding-top: 4px;
@@ -140,6 +143,7 @@ body {
   opacity: 0;
   background: #277D6B;
   color: #999;
+  cursor: pointer;
   font-size: 20px;
   padding-left: 40px;
   padding-top: 4px;
@@ -343,9 +347,9 @@ body {
         .container #about .about_nav .option:hover {
           background: #040; }
       .container #about .about_nav .ab_option {
-        border-left: none; }
+        border-left: 4px solid #000; }
       .container #about .about_nav .prog_option {
-        border-right: none; }
+        border-right: 4px solid #000; }
     .container #about .desc_header {
       width: 80%;
       height: 10%;

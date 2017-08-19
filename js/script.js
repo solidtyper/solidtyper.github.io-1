@@ -1,7 +1,19 @@
 
 window.onload = function(){
-
-    window.scrollTo(6000,6000);
+    alert(location.hash)
+    switch(window.location.hash){
+      case 'welcome':window.scrollTo(2392,2500);break;
+      case 'about_me':window.scrollTo(385, 971);;break;
+      case 'skills':window.scrollTo(0,0);break;
+      case 'progression':window.scrollTo(1045,0);break;
+      case 'about_projects':window.scrollTo(4380,540);break;
+      case 'project1':window.scrollTo(2392,2500);break;
+      case 'project2':window.scrollTo(2392,2500);break;
+      case 'project3':window.scrollTo(2392,2500);break;
+      case 'project4':window.scrollTo(2392,2500);break;
+      case 'contact_me':window.scrollTo(2392,2500);break;
+      default:window.scrollTo(2392,2500);location.href = '#welcome'
+    }
 
     setTimeout(function(){
       document.getElementById('welcome').children[0].children[1].children[0].classList.add('welcome_sign_up')
@@ -14,9 +26,17 @@ window.onload = function(){
     for(var i = 1; i <= 4; i++){
       document.getElementById('menu').children[i].children[0].style.color = '#FF423F';
     }
-    /*window.location.href = '#w_content';*/
     document.getElementById('menu').children[1].children[0].style.color = '#0A0';
   /*  document.getElementById('menu').children[1].children[0].classList.add('selected_option');*/
+}
+
+function menu_appearance_cancel(){
+  document.body.children[0].classList.remove('overlay_rm_opacity');
+  setTimeout(function(){document.body.children[0].classList.remove( 'overlay_appearance');}, 300)
+  for(var i = 1; i <= 4; i++)  {
+    document.getElementById('menu').children[i].children[0].classList.remove('menu_appeare')
+  }
+  document.getElementById('button').classList.remove( 'menu_button_animation');
 }
 
 function menu_animate(){
@@ -25,7 +45,6 @@ function menu_animate(){
     document.getElementById('button').classList.toggle( 'menu_button_animation');
 
     if(document.getElementById('button').classList[1] != 'menu_button_animation'){
-    /*  document.getElementById('menu').children[1].children[0].classList.remove('selected_option');*/
       document.body.children[0].classList.remove('overlay_rm_opacity');
       setTimeout(function(){document.body.children[0].classList.remove( 'overlay_appearance');}, 300)
     }else{
@@ -54,6 +73,9 @@ function page_status(hash){
         document.getElementById('menu').children[3].children[0].classList.remove('selected_option');
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
+        window.scrollTo(2392,2500);
+        window.loaction.href = '#welcome';
+
         break;
 
       case 'about':
@@ -68,6 +90,9 @@ function page_status(hash){
         document.getElementById('menu').children[2].children[0].classList.add('selected_option');
         document.getElementById('menu').children[3].children[0].classList.remove('selected_option');
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
+
+        window.scrollTo(385, 971);
+        window.loaction.href = '#about';
 
       break;
 
@@ -84,6 +109,9 @@ function page_status(hash){
         document.getElementById('menu').children[3].children[0].classList.add('selected_option');
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
+        window.scrollTo(4380, 540);
+        window.loaction.href = '#about';
+
         break;
 
       case 'contact':
@@ -98,6 +126,10 @@ function page_status(hash){
         document.getElementById('menu').children[2].children[0].classList.remove('selected_option');
         document.getElementById('menu').children[3].children[0].classList.remove('selected_option');
         document.getElementById('menu').children[4].children[0].classList.add('selected_option');
+
+        window.scrollTo(376, 4548);
+        window.loaction.href = '#contact';
+
     }
 
 }
@@ -111,13 +143,16 @@ function img_view(img_name){
 function about_navigator(to_where){
   switch(to_where){
     case 'about':
-      window.location.href = '#about_description' ;
+      window.location.href = '#about_me' ;
+      window.scrollTo(385, 971);
       break;
     case 'skills':
       window.location.href = '#skills' ;
+      window.scrollTo(0, 0);
       break;
     case 'progression':
       window.location.href = '#progression' ;
+      window.scrollTo(1045, 0);
       break;
   }
 }
