@@ -1,7 +1,7 @@
 
 window.onload = function(){
 
-    window.scrollTo(6000, 6000);
+    window.scrollTo(2000,2000);
 
     setTimeout(function(){
       document.getElementById('welcome').children[0].children[1].children[0].classList.add('welcome_sign_up')
@@ -14,7 +14,7 @@ window.onload = function(){
     for(var i = 1; i <= 4; i++){
       document.getElementById('menu').children[i].children[0].style.color = '#FF423F';
     }
-    window.location.href = '#w_content';
+    /*window.location.href = '#w_content';*/
     document.getElementById('menu').children[1].children[0].style.color = '#0A0';
   /*  document.getElementById('menu').children[1].children[0].classList.add('selected_option');*/
 }
@@ -107,3 +107,50 @@ function img_view(img_name){
   window.location.href = 'imgs/'+img_name
 
 }
+
+function about_navigator(to_where){
+  switch(to_where){
+    case 'about':
+      window.location.href = '#about_description' ;
+      break;
+    case 'skills':
+      window.location.href = '#skills' ;
+      break;
+    case 'progression':
+      window.location.href = '#progression' ;
+      break;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

@@ -4,7 +4,6 @@
     <title>anas ouardini</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="icon" href="imgs/avatar.png">
     <script src="js/script.js"></script>
   </head>
   <body>
@@ -39,7 +38,7 @@
             <div class="right"></div>
           </div>
           <div id="w_content" class="welcome_content">
-            <div class="welcome_sign"></div>
+            <div class="welcome_sign">hi there</div>
             <p>Lorem ipsum dolor sit amet, qui no inani scripserit. Antiopam assueverit ut qui, ius sonet scriptorem an. Mel meliore principes theophrastus id. Ex eos impedit .</p>
           </div>
         </div>
@@ -49,6 +48,11 @@
         <div class="about_bg_bottom"></div>
         <div class="about_bg_right"></div>
         <div id="about_description">
+          <div class="about_nav">
+            <div onclick="about_navigator(&quot;about&quot;)" class="option ab_option">about me</div>
+            <div onclick="about_navigator(&quot;skills&quot;)" class="option">my skills</div>
+            <div onclick="about_navigator(&quot;progression&quot;)" class="option prog_option">my progression</div>
+          </div>
           <div class="desc_header">about me</div>
           <div onclick="img_view(&quot;nice_pic.png&quot;)" class="img"></div>
           <div class="paragraph">
@@ -61,7 +65,12 @@
         </div>
         <div class="skills_bg_top"></div>
         <div class="skills_bg_bottom"></div>
-        <div class="skills">
+        <div id="skills" class="skills">
+          <div class="about_nav">
+            <div onclick="about_navigator(&quot;about&quot;)" class="option ab_option">about me</div>
+            <div onclick="about_navigator(&quot;skills&quot;)" class="option">my skills</div>
+            <div onclick="about_navigator(&quot;progression&quot;)" class="option prog_option">my progression</div>
+          </div>
           <div class="header">my skills</div>
           <div class="design_skills">
             <div class="header">design skills</div>
@@ -84,7 +93,12 @@
         </div>
         <div class="progression_bg_top"></div>
         <div class="progression_bg_bottom"></div>
-        <div class="progression">
+        <div id="progression" class="progression">
+          <div class="about_nav">
+            <div onclick="about_navigator(&quot;about&quot;)" class="option ab_option">about me</div>
+            <div onclick="about_navigator(&quot;skills&quot;)" class="option">my skills</div>
+            <div onclick="about_navigator(&quot;progression&quot;)" class="option prog_option">my progression</div>
+          </div>
           <div class="header">my skills progression</div>
           <div class="design_skills">
             <div class="header">development skills</div>
