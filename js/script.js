@@ -1,7 +1,7 @@
 
 window.onload = function(){
     switch(window.location.hash){
-      case '#welcome_':window.scrollTo(2392,2500);break;
+      case '#welcome_':alert('welcome');window.scrollTo(2392,2500);break;
       case '#about_me':window.scrollTo(385, 971);;break;
       case '#skills':window.scrollTo(0,0);break;
       case '#progression':window.scrollTo(1045,0);break;
@@ -13,6 +13,8 @@ window.onload = function(){
       case '#contact_me':window.scrollTo(2392,2500);break;
       default:window.scrollTo(2392,2500);location.href = '#welcome_'
     }
+
+    window.scrollTo(2392,2500);
 
     setTimeout(function(){
       document.getElementById('welcome').children[0].children[1].children[0].classList.add('welcome_sign_up')
