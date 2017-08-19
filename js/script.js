@@ -111,7 +111,7 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
         window.location.href = '#about';
-        window.scrollTo(4375, 540);
+        window.scrollTo(4375, 940);
 
         break;
 
@@ -163,7 +163,7 @@ function projs_navigator(to_where){
   switch(to_where){
     case 'about_projs':
       /*window.location.href = '#about_projs' ;*/
-      window.scrollTo(4375, 540);
+      window.scrollTo(4375, 940);
       break;
     case 'proj_1':
       /*window.location.href = '#proj_1' ;*/

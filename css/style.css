@@ -8,8 +8,7 @@ a {
 body {
   background: #222;
   min-height: 420px;
-  z-index: -1;
-  overflow: hidden; }
+  z-index: -1; }
 
 .overlay {
   position: fixed;
