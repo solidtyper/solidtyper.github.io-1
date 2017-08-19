@@ -1,18 +1,17 @@
 
 window.onload = function(){
-    alert(location.hash)
     switch(window.location.hash){
-      case 'welcome':window.scrollTo(2392,2500);break;
-      case 'about_me':window.scrollTo(385, 971);;break;
-      case 'skills':window.scrollTo(0,0);break;
-      case 'progression':window.scrollTo(1045,0);break;
-      case 'about_projects':window.scrollTo(4380,540);break;
-      case 'project1':window.scrollTo(2392,2500);break;
-      case 'project2':window.scrollTo(2392,2500);break;
-      case 'project3':window.scrollTo(2392,2500);break;
-      case 'project4':window.scrollTo(2392,2500);break;
-      case 'contact_me':window.scrollTo(2392,2500);break;
-      default:window.scrollTo(2392,2500);location.href = '#welcome'
+      case '#welcome_':window.scrollTo(2392,2500);break;
+      case '#about_me':window.scrollTo(385, 971);;break;
+      case '#skills':window.scrollTo(0,0);break;
+      case '#progression':window.scrollTo(1045,0);break;
+      case '#about_projects':window.scrollTo(4380,540);break;
+      case '#project1':window.scrollTo(2392,2500);break;
+      case '#project2':window.scrollTo(2392,2500);break;
+      case '#project3':window.scrollTo(2392,2500);break;
+      case '#project4':window.scrollTo(2392,2500);break;
+      case '#contact_me':window.scrollTo(2392,2500);break;
+      default:window.scrollTo(2392,2500);location.href = '#welcome_'
     }
 
     setTimeout(function(){
@@ -74,7 +73,7 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
         window.scrollTo(2392,2500);
-        window.loaction.href = '#welcome';
+        window.loaction.href = '#welcome_';
 
         break;
 
