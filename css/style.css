@@ -228,7 +228,7 @@ body {
           height: 100%;
           background: #9099B2;
           transform-origin: left;
-          transform: rotateY(120deg);
+          transform: rotateY(118.8deg);
           animation-duration: 1.2s;
           animation-timing-function: ease-in;
           animation-fill-mode: forwards; }
@@ -237,7 +237,7 @@ body {
           height: 100%;
           background: #9099B2;
           transform-origin: right;
-          transform: rotateY(-120deg);
+          transform: rotateY(-118.8deg);
           animation-duration: 1.5s;
           animation-timing-function: ease-in;
           animation-fill-mode: forwards; }
