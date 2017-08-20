@@ -229,7 +229,6 @@ body {
           background: #9099B2;
           transform-origin: left;
           transform: rotateY(120deg);
-          animation-name: left_door;
           animation-duration: 1.2s;
           animation-timing-function: ease-in;
           animation-fill-mode: forwards; }
@@ -239,7 +238,6 @@ body {
           background: #9099B2;
           transform-origin: right;
           transform: rotateY(-120deg);
-          animation-name: right_door;
           animation-duration: 1.5s;
           animation-timing-function: ease-in;
           animation-fill-mode: forwards; }

@@ -15,6 +15,10 @@ window.onload = function(){
     }*/
 
     if (innerWidth >= 689){window.scrollTo(4417,4447)}else{window.scrollTo(2661,2613)}
+    setInterval(function(){
+      document.getElementById('welcome').children[0].children[0].children[0].style.animationName = 'left_door';
+      document.getElementById('welcome').children[0].children[0].children[1].style.animationName = 'right_door';
+    },500)
 
     setTimeout(function(){
       document.getElementById('welcome').children[0].children[1].children[0].classList.add('welcome_sign_up')
