@@ -14,7 +14,7 @@ window.onload = function(){
       default:window.scrollTo(2392,2500);location.href = '#welcome_'
     }*/
 
-    window.scrollTo(4417,4447);
+    if (innerWidth >= 689){window.scrollTo(4417,4447)}else{window.scrollTo(2661,2613)}
 
     setTimeout(function(){
       document.getElementById('welcome').children[0].children[1].children[0].classList.add('welcome_sign_up')
@@ -58,6 +58,15 @@ function menu_animate(){
     }
 
 }
+/* scrolling calculation */
+/*
+var containerX = 10000,
+      containerY = 10000,
+      innerX = window.innerWidth,
+      innerY = window.innerHeight,
+*/
+
+
 
 function page_status(hash){
     switch (hash){
@@ -75,7 +84,7 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
         window.location.href = '#welcome_';
-        window.scrollTo(4417,4447);
+        if (innerWidth >= 689){window.scrollTo(4417,4447)}else{window.scrollTo(2661,2613)}
 
         break;
 
@@ -93,7 +102,7 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
         window.location.href = '#about';
-        window.scrollTo(1000, 1722);
+        if (innerWidth >= 689){window.scrollTo(1000, 1722)}else{window.scrollTo(634,970)}
 
       break;
 
@@ -111,7 +120,7 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
         window.location.href = '#projects';
-        window.scrollTo(7711, 1710);
+        if (innerWidth >= 689){window.scrollTo(7711, 1710)}else{window.scrollTo(4650,1009)}
 
         break;
 
@@ -129,7 +138,7 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.add('selected_option');
 
         window.location.href = '#contact';
-        window.scrollTo(1008, 7811);
+        if (innerWidth >= 689){window.scrollTo(1008, 7811)}else{window.scrollTo(634, 4712)}
 
     }
 
@@ -145,15 +154,15 @@ function about_navigator(to_where){
   switch(to_where){
     case 'about':
       /*window.location.href = '#about_me' ;*/
-      window.scrollTo(1000, 1722);
+      if (innerWidth >= 689){window.scrollTo(1000, 1722)}else{window.scrollTo(634,970)}
       break;
     case 'skills':
       /*window.location.href = '#skills' ;*/
-      window.scrollTo(56, 193);
+      if (innerWidth >= 689){window.scrollTo(1944, 125)}else{window.scrollTo(83, 81)}
       break;
     case 'progression':
     /*  window.location.href = '#progression' ;*/
-      window.scrollTo(1944, 216);
+      if (innerWidth >= 689){window.scrollTo(85, 125)}else{window.scrollTo(1204, 92)}
       break;
   }
 }
@@ -163,15 +172,15 @@ function projs_navigator(to_where){
   switch(to_where){
     case 'about_projs':
       /*window.location.href = '#about_projs' ;*/
-      window.scrollTo(7711, 1710);
+      if (innerWidth >= 689){window.scrollTo(7711, 1710)}else{window.scrollTo(4702, 993)}
       break;
     case 'proj_1':
       /*window.location.href = '#proj_1' ;*/
-      window.scrollTo(8671, 216);
+      if (innerWidth >= 689){window.scrollTo(8671, 216)}else{window.scrollTo(4111, 92)}
       break;
     case 'proj_2':
       /*window.location.href = '#proj_3' ;*/
-      window.scrollTo(6776, 216);
+      if (innerWidth >= 689){window.scrollTo(6776, 216)}else{window.scrollTo(5253, 92)}
   }
 }
 

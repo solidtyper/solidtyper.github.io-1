@@ -192,7 +192,7 @@ body {
   width: 10000px;
   z-index: 1;
   height: 10000px;
-  transition: 4s all ease-in;
+  transition: 0.25s all ease-in;
   color: #EEE; }
   .container #welcome {
     position: absolute;
@@ -792,9 +792,25 @@ body {
   100% {
     opacity: 1;
     left: 20%; } }
-@media (max-width: 600px) {
+@media (max-width: 689px) {
   .container {
-    width: 4000px;
-    height: 4000px; } }
+    width: 6000px;
+    height: 6000px; }
+
+  .bg_right {
+    border-right-width: 400.66px !important;
+    border-top-width: 400.66px !important; }
+
+  .bg_bottom {
+    border-left-width: 400.64px !important;
+    border-top-width: 237px !important; }
+    .bg_bottom::after {
+      left: -400.64px !important;
+      width: 400.64px !important; }
+
+  .contact_container .fa {
+    font-size: 25px !important; }
+  .contact_container span {
+    font-size: 15px !important; } }
 
 /*# sourceMappingURL=style.css.map */
