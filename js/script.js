@@ -18,6 +18,8 @@ window.onload = function(){
     setInterval(function(){
       document.getElementById('welcome').children[0].children[0].children[0].style.animationName = 'left_door';
       document.getElementById('welcome').children[0].children[0].children[1].style.animationName = 'right_door';
+      document.getElementById('welcome').children[0].children[1].children[0].style.animationName = 'welcome_sign';
+      document.getElementById('welcome').children[0].children[1].children[1].style.animationName = 'paragraph_appeare';
     },250)
 
     setTimeout(function(){
