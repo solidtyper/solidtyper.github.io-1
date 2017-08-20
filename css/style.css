@@ -8,7 +8,8 @@ a {
 body {
   background: #222;
   min-height: 420px;
-  z-index: -1; }
+  z-index: -1;
+  font-family: "Poiret One", cursive; }
 
 .overlay {
   position: fixed;
@@ -34,7 +35,8 @@ body {
   z-index: 10;
   width: 160px;
   height: 80px;
-  display: flex; }
+  display: flex;
+  font-family: "Monoton", cursive; }
   .owner:hover {
     border: 1px solid #DDD; }
   .owner .avatar {
@@ -45,135 +47,134 @@ body {
   .owner .name {
     width: 55%;
     height: 100%;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
-    color: #222;
+    color: #089C98;
     padding-top: 8%;
-    background: rgba(150, 150, 150, 0.5); }
+    background: #222; }
 
-.menuBar .outer_circle {
-  position: fixed;
-  top: 25%;
-  left: 2%;
-  z-index: 10;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  border: 6px solid #BBB;
-  border-radius: 50%; }
-  .menuBar .outer_circle:hover {
-    border-color: #999; }
-  .menuBar .outer_circle:hover .inner_circle {
-    background: #999; }
-  .menuBar .outer_circle .inner_circle {
-    position: absolute;
-    top: 10%;
+.menuBar {
+  font-family: "Monoton", cursive;
+  font-size: 14px; }
+  .menuBar .outer_circle {
+    position: fixed;
+    top: 25%;
     left: 2%;
-    width: 46px;
-    height: 46px;
-    transform: translate(-4.5px, -8px) scale(0.4);
-    background: #BBB;
+    z-index: 10;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 6px solid #222;
+    border-radius: 50%; }
+    .menuBar .outer_circle:hover {
+      border-color: #333; }
+    .menuBar .outer_circle:hover .inner_circle {
+      background: #333; }
+    .menuBar .outer_circle .inner_circle {
+      position: absolute;
+      top: 10%;
+      left: 2%;
+      width: 46px;
+      height: 46px;
+      transform: translate(-4.5px, -8px) scale(0.4);
+      background: #222;
+      border-radius: 50%;
+      transition: transform 0.25s ease-in; }
+    .menuBar .outer_circle .menu_button_animation {
+      transform: translate(-4.5px, -8px) scale(0.7); }
+  .menuBar .option:hover {
+    left: 0; }
+  .menuBar .welcome {
+    position: fixed;
+    top: 40%;
+    left: -160px;
+    z-index: 10;
+    width: 150px;
+    height: 35px;
+    opacity: 0;
+    background: #346F7D;
+    color: #999;
+    cursor: pointer;
+    padding-left: 35px;
+    padding-top: 4px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.5s all ease;
+    transition-delay: 0s; }
+  .menuBar .about {
+    position: fixed;
+    top: 50%;
+    left: -160px;
+    z-index: 10;
+    width: 150px;
+    height: 35px;
+    opacity: 0;
+    background: #223870;
+    color: #999;
+    cursor: pointer;
+    padding-left: 40px;
+    padding-top: 4px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.5s all ease;
+    transition-delay: 0.1s; }
+  .menuBar .projects {
+    position: fixed;
+    top: 60%;
+    left: -160px;
+    z-index: 10;
+    width: 150px;
+    height: 35px;
+    opacity: 0;
+    background: #6E3834;
+    color: #999;
+    cursor: pointer;
+    padding-left: 40px;
+    padding-top: 4px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.5s all ease;
+    transition-delay: 0.15s; }
+  .menuBar .contact {
+    position: fixed;
+    top: 70%;
+    left: -160px;
+    z-index: 10;
+    width: 150px;
+    height: 35px;
+    opacity: 0;
+    background: #1D5E51;
+    color: #999;
+    cursor: pointer;
+    padding-left: 40px;
+    padding-top: 4px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.5s all ease;
+    transition-delay: 0.2s; }
+  .menuBar .menu_appeare {
+    left: -20px;
+    opacity: 1; }
+  .menuBar .page_on {
+    position: absolute;
+    top: 13px;
+    left: 120px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    transition: transform 0.25s ease-in; }
-  .menuBar .outer_circle .menu_button_animation {
-    transform: translate(-4.5px, -8px) scale(0.7); }
-.menuBar .option:hover {
-  left: 0; }
-.menuBar .welcome {
-  position: fixed;
-  top: 40%;
-  left: -160px;
-  z-index: 10;
-  width: 150px;
-  height: 35px;
-  opacity: 0;
-  background: #3E8596;
-  color: #999;
-  cursor: pointer;
-  font-size: 20px;
-  padding-left: 40px;
-  padding-top: 4px;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-  transition: 0.5s all ease;
-  transition-delay: 0s; }
-.menuBar .about {
-  position: fixed;
-  top: 50%;
-  left: -160px;
-  z-index: 10;
-  width: 150px;
-  height: 35px;
-  opacity: 0;
-  background: #385CB8;
-  color: #999;
-  cursor: pointer;
-  font-size: 20px;
-  padding-left: 40px;
-  padding-top: 4px;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-  transition: 0.5s all ease;
-  transition-delay: 0.1s; }
-.menuBar .projects {
-  position: fixed;
-  top: 60%;
-  left: -160px;
-  z-index: 10;
-  width: 150px;
-  height: 35px;
-  opacity: 0;
-  background: #A3534E;
-  color: #999;
-  cursor: pointer;
-  font-size: 20px;
-  padding-left: 40px;
-  padding-top: 4px;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-  transition: 0.5s all ease;
-  transition-delay: 0.15s; }
-.menuBar .contact {
-  position: fixed;
-  top: 70%;
-  left: -160px;
-  z-index: 10;
-  width: 150px;
-  height: 35px;
-  opacity: 0;
-  background: #277D6B;
-  color: #999;
-  cursor: pointer;
-  font-size: 20px;
-  padding-left: 40px;
-  padding-top: 4px;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-  transition: 0.5s all ease;
-  transition-delay: 0.2s; }
-.menuBar .menu_appeare {
-  left: -30px;
-  opacity: 1; }
-.menuBar .page_on {
-  position: absolute;
-  top: 13px;
-  left: 120px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #0A0;
-  transition: 1s all ease; }
-.menuBar .page_off {
-  position: absolute;
-  top: 13px;
-  left: 120px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #D43735;
-  transition: 1s all ease; }
-.menuBar .selected_option {
-  left: 0 !important; }
+    background: #0A0;
+    transition: 1s all ease; }
+  .menuBar .page_off {
+    position: absolute;
+    top: 13px;
+    left: 120px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #D43735;
+    transition: 1s all ease; }
+  .menuBar .selected_option {
+    left: 0 !important; }
 
 @media (max-height: 480px) {
   .menuBar .outer_circle {
@@ -259,6 +260,7 @@ body {
         background: #D29945;
         border-left: 4px solid #F2B83D;
         border-right: 4px solid #F2B83D;
+        font-family: "Abril Fatface", cursive;
         font-size: 40px;
         text-align: center;
         opacity: 0;
@@ -356,7 +358,8 @@ body {
       font-size: 40px;
       margin: auto;
       margin-top: 10%;
-      margin-bottom: 10%; }
+      margin-bottom: 10%;
+      font-family: "Abril Fatface", cursive; }
     .container #about #about_description {
       position: absolute;
       top: 55.555%;
@@ -409,7 +412,8 @@ body {
         margin-top: 10%;
         margin-bottom: 8%;
         font-size: 40px;
-        text-align: center; }
+        text-align: center;
+        font-family: "Abril Fatface", cursive; }
       .container #about .skills .design_skills {
         width: 48%;
         height: 40%;
@@ -418,7 +422,7 @@ body {
         .container #about .skills .design_skills .header {
           text-align: center;
           font-size: 25px;
-          text-decoration: underline; }
+          font-family: "Comfortaa", cursive; }
         .container #about .skills .design_skills ul {
           margin-left: 4%;
           margin-top: 20%; }
@@ -432,7 +436,7 @@ body {
         .container #about .skills .development_skills .header {
           text-align: center;
           font-size: 25px;
-          text-decoration: underline; }
+          font-family: "Comfortaa", cursive; }
         .container #about .skills .development_skills ul {
           margin-left: 4%;
           margin-top: 20%; }
@@ -472,14 +476,15 @@ body {
         margin-top: 10%;
         margin-bottom: 8%;
         font-size: 40px;
-        text-align: center; }
+        text-align: center;
+        font-family: "Abril Fatface", cursive; }
       .container #about .progression .design_skills {
         width: 50%;
         float: left; }
         .container #about .progression .design_skills .header {
           text-align: center;
           font-size: 25px;
-          text-decoration: underline;
+          font-family: "Comfortaa", cursive;
           font-size: 25px; }
         .container #about .progression .design_skills ul {
           margin-top: 20%;
@@ -492,7 +497,7 @@ body {
         .container #about .progression .development_skills .header {
           text-align: center;
           font-size: 25px;
-          text-decoration: underline;
+          font-family: "Comfortaa", cursive;
           font-size: 25px; }
         .container #about .progression .development_skills ul {
           margin-top: 20%;
@@ -576,7 +581,8 @@ body {
         height: 10%;
         font-size: 40px;
         margin: 15% auto;
-        text-align: center; }
+        text-align: center;
+        font-family: "Abril Fatface", cursive; }
       .container #projects #proj_description .desc {
         width: 80%;
         height: 50%;
@@ -655,7 +661,8 @@ body {
       margin-top: 14%;
       margin-bottom: 6%;
       text-align: center;
-      font-size: 40px; }
+      font-size: 40px;
+      font-family: "Abril Fatface", cursive; }
     .container #projects .proj .imgs_section {
       width: 30%;
       height: 60%;
@@ -692,6 +699,7 @@ body {
       bottom: 0;
       width: 100%;
       height: 6%;
+      color: #000;
       text-align: center;
       background: #76A62B; }
   .container #contact {
@@ -748,7 +756,7 @@ body {
           top: 30%;
           left: 63%; }
         .container #contact .contact_container .socialmedia .fa-codepen {
-          color: #EEE;
+          color: #DDD;
           top: 60%;
           left: 63%; }
       .container #contact .contact_container #contact_me span, .container #contact .contact_container .socialmedia span {
@@ -817,6 +825,7 @@ body {
     transform: rotateY(-108deg) !important; }
 
   .nav {
-    padding-top: 0 !important; } }
+    padding-top: 1% !important;
+    font-size: 15px !important; } }
 
 /*# sourceMappingURL=style.css.map */

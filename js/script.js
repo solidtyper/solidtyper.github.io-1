@@ -33,7 +33,7 @@ window.onload = function(){
     for(var i = 1; i <= 4; i++){
       document.getElementById('menu').children[i].children[0].style.color = '#FF423F';
     }
-    document.getElementById('menu').children[1].children[0].style.color = '#0A0';
+    document.getElementById('menu').children[1].children[0].style.color = '#0c0';
   /*  document.getElementById('menu').children[1].children[0].classList.add('selected_option');*/
 }
 
@@ -82,7 +82,7 @@ function page_status(hash){
           document.getElementById('menu').children[i].children[0].style.color = '#FF423F';
         }
         document.getElementById('menu').children[1].children[0].children[0].className= 'page_on';
-        document.getElementById('menu').children[1].children[0].style.color = '#0A0';
+        document.getElementById('menu').children[1].children[0].style.color = '#0c0';
 
         document.getElementById('menu').children[1].children[0].classList.add('selected_option');
         document.getElementById('menu').children[2].children[0].classList.remove('selected_option');
@@ -112,7 +112,7 @@ function page_status(hash){
           document.getElementById('menu').children[i].children[0].style.color = '#FF423F';
         }
         document.getElementById('menu').children[2].children[0].children[0].className= 'page_on';
-        document.getElementById('menu').children[2].children[0].style.color = '#0A0';
+        document.getElementById('menu').children[2].children[0].style.color = '#0c0';
 
         document.getElementById('menu').children[1].children[0].classList.remove('selected_option');
         document.getElementById('menu').children[2].children[0].classList.add('selected_option');
@@ -130,7 +130,7 @@ function page_status(hash){
           document.getElementById('menu').children[i].children[0].style.color = '#FF423F';
       }
         document.getElementById('menu').children[3].children[0].children[0].className= 'page_on';
-        document.getElementById('menu').children[3].children[0].style.color = '#0A0';
+        document.getElementById('menu').children[3].children[0].style.color = '#0c0';
 
         document.getElementById('menu').children[1].children[0].classList.remove('selected_option');
         document.getElementById('menu').children[2].children[0].classList.remove('selected_option');
@@ -148,7 +148,7 @@ function page_status(hash){
           document.getElementById('menu').children[i].children[0].style.color = '#FF423F';
       }
         document.getElementById('menu').children[4].children[0].children[0].className= 'page_on';
-        document.getElementById('menu').children[4].children[0].style.color = '#0A0';
+        document.getElementById('menu').children[4].children[0].style.color = '#0c0';
 
         document.getElementById('menu').children[1].children[0].classList.remove('selected_option');
         document.getElementById('menu').children[2].children[0].classList.remove('selected_option');
