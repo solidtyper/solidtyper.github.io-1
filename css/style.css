@@ -9,6 +9,7 @@ body {
   background: #222;
   min-height: 420px;
   z-index: -1;
+  overflow: hidden;
   font-family: "Poiret One", cursive; }
 
 .overlay {
@@ -261,6 +262,7 @@ body {
         border-left: 4px solid #F2B83D;
         border-right: 4px solid #F2B83D;
         font-family: "Abril Fatface", cursive;
+        text-transform: capitalize;
         font-size: 40px;
         text-align: center;
         opacity: 0;
@@ -359,7 +361,8 @@ body {
       margin: auto;
       margin-top: 10%;
       margin-bottom: 10%;
-      font-family: "Abril Fatface", cursive; }
+      font-family: "Abril Fatface", cursive;
+      text-transform: capitalize; }
     .container #about #about_description {
       position: absolute;
       top: 55.555%;
@@ -413,7 +416,8 @@ body {
         margin-bottom: 8%;
         font-size: 40px;
         text-align: center;
-        font-family: "Abril Fatface", cursive; }
+        font-family: "Abril Fatface", cursive;
+        text-transform: capitalize; }
       .container #about .skills .design_skills {
         width: 48%;
         height: 40%;
@@ -477,7 +481,8 @@ body {
         margin-bottom: 8%;
         font-size: 40px;
         text-align: center;
-        font-family: "Abril Fatface", cursive; }
+        font-family: "Abril Fatface", cursive;
+        text-transform: capitalize; }
       .container #about .progression .design_skills {
         width: 50%;
         float: left; }
@@ -485,6 +490,7 @@ body {
           text-align: center;
           font-size: 25px;
           font-family: "Comfortaa", cursive;
+          text-transform: capitalize;
           font-size: 25px; }
         .container #about .progression .design_skills ul {
           margin-top: 20%;
@@ -498,6 +504,7 @@ body {
           text-align: center;
           font-size: 25px;
           font-family: "Comfortaa", cursive;
+          text-transform: capitalize;
           font-size: 25px; }
         .container #about .progression .development_skills ul {
           margin-top: 20%;
@@ -582,7 +589,8 @@ body {
         font-size: 40px;
         margin: 15% auto;
         text-align: center;
-        font-family: "Abril Fatface", cursive; }
+        font-family: "Abril Fatface", cursive;
+        text-transform: capitalize; }
       .container #projects #proj_description .desc {
         width: 80%;
         height: 50%;
@@ -662,7 +670,8 @@ body {
       margin-bottom: 6%;
       text-align: center;
       font-size: 40px;
-      font-family: "Abril Fatface", cursive; }
+      font-family: "Abril Fatface", cursive;
+      text-transform: capitalize; }
     .container #projects .proj .imgs_section {
       width: 30%;
       height: 60%;
