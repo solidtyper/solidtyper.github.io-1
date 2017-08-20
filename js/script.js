@@ -92,6 +92,18 @@ function page_status(hash){
         window.location.href = '#welcome_';
         if (innerWidth >= 689){window.scrollTo(4417,4447)}else{window.scrollTo(2661,2613)}
 
+        document.getElementById('welcome').children[0].children[0].children[0].style.animationName = '';
+        document.getElementById('welcome').children[0].children[0].children[1].style.animationName = '';
+        document.getElementById('welcome').children[0].children[1].children[0].style.animationName = '';
+        document.getElementById('welcome').children[0].children[1].children[1].style.animationName = '';
+
+        setInterval(function(){
+          document.getElementById('welcome').children[0].children[0].children[0].style.animationName = 'left_door';
+          document.getElementById('welcome').children[0].children[0].children[1].style.animationName = 'right_door';
+          document.getElementById('welcome').children[0].children[1].children[0].style.animationName = 'welcome_sign';
+          document.getElementById('welcome').children[0].children[1].children[1].style.animationName = 'paragraph_appeare';
+        },250);
+
         break;
 
       case 'about':
@@ -164,11 +176,11 @@ function about_navigator(to_where){
       break;
     case 'skills':
       /*window.location.href = '#skills' ;*/
-      if (innerWidth >= 689){window.scrollTo(1944, 125)}else{window.scrollTo(83, 81)}
+      if (innerWidth >= 689){window.scrollTo(85, 125)}else{window.scrollTo(1204, 92)}
       break;
     case 'progression':
     /*  window.location.href = '#progression' ;*/
-      if (innerWidth >= 689){window.scrollTo(85, 125)}else{window.scrollTo(1204, 92)}
+      if (innerWidth >= 689){window.scrollTo(1944, 125)}else{window.scrollTo(83, 81)}
       break;
   }
 }
@@ -182,11 +194,11 @@ function projs_navigator(to_where){
       break;
     case 'proj_1':
       /*window.location.href = '#proj_1' ;*/
-      if (innerWidth >= 689){window.scrollTo(8671, 216)}else{window.scrollTo(4111, 92)}
+      if (innerWidth >= 689){window.scrollTo(6776, 216)}else{window.scrollTo(5253, 92)}
       break;
     case 'proj_2':
       /*window.location.href = '#proj_3' ;*/
-      if (innerWidth >= 689){window.scrollTo(6776, 216)}else{window.scrollTo(5253, 92)}
+      if (innerWidth >= 689){window.scrollTo(8671, 216)}else{window.scrollTo(4111, 92)}
   }
 }
 
