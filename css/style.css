@@ -820,6 +820,9 @@ body {
       left: -400.64px !important;
       width: 400.64px !important; }
 
+  #projects .header {
+    font-size: 30px !important; }
+
   .contact_container .fa {
     font-size: 25px !important; }
   .contact_container span {
