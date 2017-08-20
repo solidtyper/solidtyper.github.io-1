@@ -823,6 +823,21 @@ body {
   #projects .header {
     font-size: 30px !important; }
 
+  #about .skills .header {
+    font-size: 30px !important; }
+  #about .skills .design_skills .header {
+    font-size: 20px !important; }
+  #about .skills .development_skills .header {
+    font-size: 20px !important; }
+  #about .progression .header {
+    font-size: 30px !important; }
+  #about .progression .design_skills .header {
+    font-size: 20px !important; }
+  #about .progression .development_skills .header {
+    font-size: 20px !important; }
+  #about .desc_header {
+    font-size: 30px !important; }
+
   .contact_container .fa {
     font-size: 25px !important; }
   .contact_container span {
