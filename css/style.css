@@ -211,7 +211,7 @@ body {
     background: rgba(255, 255, 255, 0.4); } }
     .container #welcome .welcome_content_container {
       position: absolute;
-      top: 37.333%;
+      top: 40%;
       left: 40%;
       width: 19.9999%;
       height: 19.9999%;
@@ -303,22 +303,22 @@ body {
     background: rgba(0, 0, 255, 0.3); } }
     .container #about .about_bg_right {
       position: absolute;
-      top: 55.555%;
-      left: 38.333%;
+      top: 59.997%;
+      left: 39.998%;
       border-right: 666.66px solid #304F9C;
       border-top: 666.66px solid transparent;
       border-bottom: 0 solid transparent; }
     .container #about .about_bg_top {
       position: absolute;
-      top: 55.555%;
-      left: 38.333%;
+      top: 59.997%;
+      left: 39.998%;
       background: #284282;
       width: 19.9999%;
       height: 19.9999%; }
     .container #about .about_bg_bottom {
       position: absolute;
-      top: 60%;
-      left: 38.333%;
+      top: 64.448%;
+      left: 39.998%;
       border-left: 666.64px solid rgba(57, 93, 186, 0.2);
       border-top: 444px solid transparent;
       border-bottom: 0 solid transparent; }
@@ -365,8 +365,8 @@ body {
       text-transform: capitalize; }
     .container #about #about_description {
       position: absolute;
-      top: 55.555%;
-      left: 38.333%;
+      top: 59.997%;
+      left: 39.998%;
       width: 19.9999%;
       height: 19.9999%; }
       .container #about #about_description .img {
@@ -449,14 +449,14 @@ body {
     .container #about .progression_bg_top {
       position: absolute;
       top: 10%;
-      left: 66.666%;
+      left: 70.0001%;
       background: #284282;
       width: 19.9999%;
       height: 19.9999%; }
     .container #about .progression_bg_bottom {
       position: absolute;
       top: 14.38%;
-      left: 66.666%;
+      left: 70.0001%;
       border-left: 666.64px solid rgba(57, 93, 186, 0.2);
       border-top: 444px solid transparent;
       border-bottom: 0 solid transparent; }
@@ -470,7 +470,7 @@ body {
     .container #about .progression {
       position: absolute;
       top: 10%;
-      left: 66.666%;
+      left: 70.0001%;
       width: 19.9999%;
       height: 19.9999%; }
       .container #about .progression .header {
@@ -551,22 +551,22 @@ body {
         border-right: 4px solid #000; }
     .container #projects .proj_desc_bg_right {
       position: absolute;
-      top: 55.555%;
-      left: 40.333%;
+      top: 59.997%;
+      left: 39.998%;
       border-right: 666.66px solid #82433E;
       border-top: 666.66px solid transparent;
       border-bottom: 0 solid transparent; }
     .container #projects .proj_desc_bg_top_left {
       position: absolute;
-      top: 55.555%;
-      left: 40.333%;
+      top: 59.997%;
+      left: 39.998%;
       background: #6B3733;
       width: 19.9999%;
       height: 19.9999%; }
     .container #projects .proj_desc_bg_bottom_left {
       position: absolute;
-      top: 59.935%;
-      left: 40.333%;
+      top: 64.377%;
+      left: 39.998%;
       border-left: 666.64px solid rgba(191, 98, 91, 0.1);
       border-top: 444px solid transparent;
       border-bottom: 0 solid transparent; }
@@ -579,8 +579,8 @@ body {
         background: rgba(191, 98, 91, 0.1); }
     .container #projects #proj_description {
       position: absolute;
-      top: 55.555%;
-      left: 40.333%;
+      top: 59.997%;
+      left: 39.998%;
       width: 19.9999%;
       height: 19.9999%; }
       .container #projects #proj_description .header {
@@ -599,14 +599,14 @@ body {
     .container #projects .proj1_bg_top {
       position: absolute;
       top: 10%;
-      left: 12%;
+      left: 10%;
       background: #6B3733;
       width: 19.9999%;
       height: 19.9999%; }
     .container #projects .proj1_bg_bottom {
       position: absolute;
       top: 14.38%;
-      left: 12%;
+      left: 10%;
       border-left: 666.64px solid rgba(191, 98, 91, 0.1);
       border-top: 444px solid transparent;
       border-bottom: 0 solid transparent; }
@@ -620,7 +620,7 @@ body {
     .container #projects .proj_1 {
       position: absolute;
       top: 10%;
-      left: 12%;
+      left: 10%;
       width: 19.9999%;
       height: 19.9999%; }
       .container #projects .proj_1 .img_1 {
@@ -632,14 +632,14 @@ body {
     .container #projects .proj2_bg_top {
       position: absolute;
       top: 10%;
-      left: 68.666%;
+      left: 70.0001%;
       background: #6B3733;
       width: 19.9999%;
       height: 19.9999%; }
     .container #projects .proj2_bg_bottom {
       position: absolute;
       top: 14.38%;
-      left: 68.666%;
+      left: 70.0001%;
       border-left: 666.64px solid rgba(191, 98, 91, 0.1);
       border-top: 444px solid transparent;
       border-bottom: 0 solid transparent; }
@@ -653,7 +653,7 @@ body {
     .container #projects .proj_2 {
       position: absolute;
       top: 10%;
-      left: 68.666%;
+      left: 70.0001%;
       width: 19.9999%;
       height: 19.9999%; }
       .container #projects .proj_2 .img_1 {
@@ -725,8 +725,8 @@ body {
     animation-direction: alternate; }
     .container #contact .contact_container {
       position: absolute;
-      top: 38.333%;
-      left: 38.333%;
+      top: 39.9998%;
+      left: 39.9998%;
       width: 19.9999%;
       height: 19.9999%;
       border: 2px solid #1D5C4F;

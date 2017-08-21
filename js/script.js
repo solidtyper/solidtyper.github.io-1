@@ -1,3 +1,11 @@
+function scrollVariables(){
+         innerX = window.innerWidth;
+         innerY = window.innerHeight;
+
+  function containerSize(){if(innerX <= 689){x = 6000}else{x = 10000};return x;}
+        childSectionSize = containerSize() * 33.333 / 100;
+        gChildSectionSize = childSectionSize * 19.999 / 100;
+}
 
 window.onload = function(){
     /*switch(window.location.hash){
@@ -13,9 +21,13 @@ window.onload = function(){
       case '#contact_me':window.scrollTo(2392,2500);break;
       default:window.scrollTo(2392,2500);location.href = '#welcome_'
     }*/
+    window.location.href = '#welcome';
+    scrollVariables();
+    var   scrollH = childSectionSize + (gChildSectionSize * 2) - (innerX - gChildSectionSize )/ 2,
+            scrollV = childSectionSize + (gChildSectionSize * 2) - (innerY - gChildSectionSize )/ 2;
+    scrollTo(scrollH, scrollV);
 
-    if (innerWidth >= 689){window.scrollTo(4417,4447)}else{window.scrollTo(2661,2613)}
-    setInterval(function(){
+    setTimeout(function(){
       document.getElementById('welcome').children[0].children[0].children[0].style.animationName = 'left_door';
       document.getElementById('welcome').children[0].children[0].children[1].style.animationName = 'right_door';
       document.getElementById('welcome').children[0].children[1].children[0].style.animationName = 'welcome_sign';
@@ -34,14 +46,14 @@ window.onload = function(){
       document.getElementById('menu').children[i].children[0].style.color = '#FF423F';
     }
     document.getElementById('menu').children[1].children[0].style.color = '#0c0';
-  /*  document.getElementById('menu').children[1].children[0].classList.add('selected_option');*/
 }
 
 function menu_appearance_cancel(){
   document.body.children[0].classList.remove('overlay_rm_opacity');
   setTimeout(function(){document.body.children[0].classList.remove( 'overlay_appearance');}, 300)
   for(var i = 1; i <= 4; i++)  {
-    document.getElementById('menu').children[i].children[0].classList.remove('menu_appeare')
+    document.getElementById('menu').children[i].children[0].classList.remove('menu_appeare');
+    document.getElementById('menu').children[i].children[0].classList.remove('selected_option');
   }
   document.getElementById('button').classList.remove( 'menu_button_animation');
 }
@@ -57,21 +69,15 @@ function menu_animate(){
     }else{
       document.body.children[0].classList.add( 'overlay_appearance');
       setTimeout(function(){document.body.children[0].classList.add('overlay_rm_opacity');}, 300)
+
     }
 
     for(var i = 1; i <= 4; i++)  {
-      document.getElementById('menu').children[i].children[0].classList.toggle('menu_appeare')
+      document.getElementById('menu').children[i].children[0].classList.toggle('menu_appeare');
+      document.getElementById('menu').children[i].children[0].classList.remove('selected_option');
     }
 
 }
-/* scrolling calculation */
-/*
-var containerX = 10000,
-      containerY = 10000,
-      innerX = window.innerWidth,
-      innerY = window.innerHeight,
-*/
-
 
 
 function page_status(hash){
@@ -90,14 +96,16 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
         window.location.href = '#welcome_';
-        if (innerWidth >= 689){window.scrollTo(4417,4447)}else{window.scrollTo(2661,2613)}
-
+        scrollVariables();
+        var  scrollH = childSectionSize + (gChildSectionSize * 2) - (innerX - gChildSectionSize )/ 2,
+               scrollV = childSectionSize + (gChildSectionSize * 2) - (innerY - gChildSectionSize )/ 2;
+        scrollTo(scrollH, scrollV);
         document.getElementById('welcome').children[0].children[0].children[0].style.animationName = '';
         document.getElementById('welcome').children[0].children[0].children[1].style.animationName = '';
         document.getElementById('welcome').children[0].children[1].children[0].style.animationName = '';
         document.getElementById('welcome').children[0].children[1].children[1].style.animationName = '';
 
-        setInterval(function(){
+        setTimeout(function(){
           document.getElementById('welcome').children[0].children[0].children[0].style.animationName = 'left_door';
           document.getElementById('welcome').children[0].children[0].children[1].style.animationName = 'right_door';
           document.getElementById('welcome').children[0].children[1].children[0].style.animationName = 'welcome_sign';
@@ -120,7 +128,10 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
         window.location.href = '#about';
-        if (innerWidth >= 689){window.scrollTo(1000, 1722)}else{window.scrollTo(634,970)}
+        scrollVariables();
+        var   scrollH = (gChildSectionSize * 2) - (innerX - gChildSectionSize )/ 2,
+                scrollV = (gChildSectionSize * 3) - (innerY - gChildSectionSize )/ 2;
+        scrollTo(scrollH, scrollV);
 
       break;
 
@@ -138,7 +149,10 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.remove('selected_option');
 
         window.location.href = '#projects';
-        if (innerWidth >= 689){window.scrollTo(7711, 1710)}else{window.scrollTo(4650,1009)}
+        scrollVariables();
+        var  scrollH = (childSectionSize * 2) + (gChildSectionSize * 2) - (innerX - gChildSectionSize )/ 2,
+               scrollV = (gChildSectionSize * 3) - (innerY - gChildSectionSize )/ 2;
+        scrollTo(scrollH, scrollV);
 
         break;
 
@@ -156,8 +170,10 @@ function page_status(hash){
         document.getElementById('menu').children[4].children[0].classList.add('selected_option');
 
         window.location.href = '#contact';
-        if (innerWidth >= 689){window.scrollTo(1008, 7811)}else{window.scrollTo(634, 4712)}
-
+        scrollVariables();
+        var  scrollH = (gChildSectionSize * 2) - (innerX - gChildSectionSize )/ 2,
+               scrollV = (childSectionSize * 2) + (gChildSectionSize * 2) - (innerY - gChildSectionSize )/ 2;
+        scrollTo(scrollH, scrollV);
     }
 
 }
@@ -172,15 +188,24 @@ function about_navigator(to_where){
   switch(to_where){
     case 'about':
       /*window.location.href = '#about_me' ;*/
-      if (innerWidth >= 689){window.scrollTo(1000, 1722)}else{window.scrollTo(634,970)}
+      scrollVariables();
+      var   scrollH = (gChildSectionSize * 2) - (innerX - gChildSectionSize )/ 2,
+              scrollV = (gChildSectionSize * 3) - (innerY - gChildSectionSize )/ 2;
+      scrollTo(scrollH, scrollV);
       break;
     case 'skills':
       /*window.location.href = '#skills' ;*/
-      if (innerWidth >= 689){window.scrollTo(85, 125)}else{window.scrollTo(1204, 92)}
+      scrollVariables();
+      var   scrollH = (childSectionSize * 10 / 100) - (innerX - gChildSectionSize )/ 2,
+              scrollV = (childSectionSize * 10 / 100) - (innerY - gChildSectionSize )/ 2;
+      scrollTo(scrollH, scrollV);
       break;
     case 'progression':
     /*  window.location.href = '#progression' ;*/
-      if (innerWidth >= 689){window.scrollTo(1944, 125)}else{window.scrollTo(83, 81)}
+    scrollVariables();
+    var   scrollH = (gChildSectionSize * 4) - (childSectionSize * 10 / 100) - (innerX - gChildSectionSize )/ 2,
+            scrollV = (childSectionSize * 10 / 100) - (innerY - gChildSectionSize )/ 2;
+    scrollTo(scrollH, scrollV);
       break;
   }
 }
@@ -190,15 +215,24 @@ function projs_navigator(to_where){
   switch(to_where){
     case 'about_projs':
       /*window.location.href = '#about_projs' ;*/
-      if (innerWidth >= 689){window.scrollTo(7711, 1710)}else{window.scrollTo(4702, 993)}
+      scrollVariables();
+      var   scrollH = (childSectionSize * 2) +(gChildSectionSize * 2) - (innerX - gChildSectionSize )/ 2,
+              scrollV = (gChildSectionSize * 3) - (innerY - gChildSectionSize )/ 2;
+      scrollTo(scrollH, scrollV);
       break;
     case 'proj_1':
       /*window.location.href = '#proj_1' ;*/
-      if (innerWidth >= 689){window.scrollTo(6776, 216)}else{window.scrollTo(5253, 92)}
+      scrollVariables();
+      var   scrollH = (childSectionSize * 2) + (childSectionSize * 10 / 100) - (innerX - gChildSectionSize )/ 2,
+              scrollV = (childSectionSize * 10 / 100) - (innerY - gChildSectionSize )/ 2;
+      scrollTo(scrollH, scrollV);
       break;
     case 'proj_2':
       /*window.location.href = '#proj_3' ;*/
-      if (innerWidth >= 689){window.scrollTo(8671, 216)}else{window.scrollTo(4111, 92)}
+      scrollVariables();
+      var   scrollH = (childSectionSize * 2) + (gChildSectionSize * 4) - (childSectionSize * 10 / 100) - (innerX - gChildSectionSize )/ 2,
+              scrollV = (childSectionSize * 10 / 100) - (innerY - gChildSectionSize )/ 2;
+      scrollTo(scrollH, scrollV);
   }
 }
 
