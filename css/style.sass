@@ -5,12 +5,16 @@
 body
     background: #CCC
 
+.wrapper
+    width: 80%
+    margin: 0 auto
+
 .welcome
+    position: relative
     overflow: hidden
     background: #000
     color: #DDD
     height: 100vh
-    min-height: 100vh
 
     .menu_icon
         float: right
@@ -30,14 +34,14 @@ body
         height: 50px
         background: #AAA
         border-radius: 10px
-        margin: 22vh auto 0 auto
+        margin: 18vh auto 0 auto
         text-align: center
         font-size: 30px
         color: #CF7118
 
     .welcome_text
         width: 80vw
-        margin: 15vh auto 0 auto
+        margin: 10vh auto 0 auto
         text-align: center
 
         p
@@ -51,11 +55,34 @@ body
             color: #AAA
             font-size: 20px
 
+        .icons
+            background: linear-gradient(to left, rgba(#AAA,.001), rgba(#AAA,.3), rgba(#AAA,.001))
+            width: 420px
+            margin: 40px auto 0 auto
+            padding: 10px
+
+            a
+                color: #DDD
+                text-decoration: none
+
+            .fa
+                margin-left: 30px
+                font-size: 30px
+
+            .fa-facebook
+                color: #00C !important
+
+    .flesh_container
+        position: absolute
+        bottom: 2vh
+        width: 100%
+
     .aboutMeFlesh
         width: 65px
-        margin: 23vh auto
+        margin: 0 auto
         text-align: center
         font-size: 16px
+        cursor: pointer
 
         .flesh
             margin-top: 10px
@@ -78,10 +105,96 @@ body
                 transform-origin: left
                 transform: rotate(45deg)
 
+.menu_overlay
+    position: fixed
+    top: 0
+    left: 0
+    background: rgba(0, 0, 0, .7)
+    width: 100vw
+    height: 100vh
+    visibility: hidden
+
+    .menu_objects
+        width: 70vw
+        margin: 30vh auto 0 auto
+        text-align: center
+        font-size: 3em
+        line-height: 14vh
+        color: #AAA
+        text-transform: capitalize
+
+        h4
+            cursor: pointer
+
+            &:hover
+                background: #B56315
+
+
+
+.about
+    background: #222
+    overflow: hidden
+    text-align: center
+    color: #CCC
+
+
+    h2
+        text-align: center
+        margin: 60px 0 20px 0
+        font-size: 30px
+        color: #E36E17
+
+    div
+        margin-bottom: 160px
+
+
+    h3
+        font-size: 25px
+        color: #C96215
+        margin: 70px 0 30px 0
+
+    h4
+        margin: 20px 0 20px 0
+        color: #9E5A28
+        font-size: 25px
+
+    p
+        margin: 30px 0 20px  0
+
+    .iconsFrame
+        max-width: 600px
+        height: 100px
+        margin: 0 auto
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+        img
+            width: 100px
+            height: 100px
+
+        div
+            font-size: 30px
+            margin-top: 30px
 
 
 
 
+
+
+
+@media (max-height : 600px)
+    .welcome
+        height: 600px
+
+        .logo
+            margin-top: 108px !important
+
+        .welcome_text
+            margin-top: 60px !important
+
+        h4
+            margin-top: 60px !important
 
 
 
