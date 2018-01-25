@@ -147,22 +147,21 @@ body {
       margin-top: 30px; }
 
 .myWork {
-  background: #FFF;
+  background: #EEE;
   text-align: center;
   overflow: hidden; }
   .myWork h2 {
     font-size: 40px;
-    margin: 40px 0 60px 0;
+    margin: 40px 0 140px 0;
     color: #333; }
   .myWork .projectContainer {
-    margin: 40px 0;
-    background: #EEE;
+    margin-bottom: 140px;
     color: #777; }
     .myWork .projectContainer .project {
       padding: 20px 0;
       display: flex;
       justify-content: space-between; }
-      .myWork .projectContainer .project .img img {
+      .myWork .projectContainer .project .projectImg img {
         width: 300px;
         height: 300px;
         border-radius: 10px; }
@@ -173,33 +172,118 @@ body {
           font-size: 30px;
           margin: 10px 0 50px 0;
           color: #444; }
-    .myWork .projectContainer .testemonials {
+    .myWork .projectContainer .testimonials {
       background: #CCC;
-      padding: 20px 0; }
-      .myWork .projectContainer .testemonials .quote blockquote {
+      padding: 10px 0; }
+      .myWork .projectContainer .testimonials .quote blockquote {
         margin-bottom: 20px;
         font-size: 20px; }
-        .myWork .projectContainer .testemonials .quote blockquote span {
+        .myWork .projectContainer .testimonials .quote blockquote span {
           font-size: 60px;
           margin-right: 20px; }
-      .myWork .projectContainer .testemonials .client {
-        margin: 30px auto 0 auto;
+      .myWork .projectContainer .testimonials .client {
+        margin: auto;
         overflow: hidden;
-        width: 550px; }
-        .myWork .projectContainer .testemonials .client img {
+        display: inline-block; }
+        .myWork .projectContainer .testimonials .client img {
           width: 70px;
           height: 70px;
           float: left; }
-        .myWork .projectContainer .testemonials .client .clientDesc {
-          font-size: 20px;
+        .myWork .projectContainer .testimonials .client .clientDesc {
+          font-size: 16px;
+          font-weight: bolder;
           float: left;
-          margin: 30px 0 0 10px; }
+          margin: 40px 0 0 10px; }
 
+.contact {
+  background: #D9853A;
+  text-align: center;
+  overflow: hidden; }
+  .contact h2 {
+    font-size: 40px;
+    margin: 40px 0 100px 0;
+    color: #6267A3; }
+  .contact input {
+    width: 40%;
+    height: 50px;
+    margin: 15px;
+    display: block;
+    padding: 10px;
+    border-radius: 12px;
+    outline: none;
+    background: #BF7533;
+    color: #6267A3;
+    font-size: 20px;
+    font-weight: bold; }
+    .contact input[name='submit'] {
+      height: 30px;
+      margin-top: 5px;
+      background: #6267A3;
+      color: #FFF;
+      font-size: 15px; }
+  .contact input[type='submit'] {
+    padding: 0; }
+  .contact textarea {
+    height: 200px;
+    width: 40%;
+    margin: 15px;
+    display: block;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    background: #BF7533;
+    color: #6267A3;
+    font-size: 20px;
+    font-weight: bold;
+    resize: vertical; }
+  .contact textarea, .contact input {
+    border: 0 solid #CCC; }
+    .contact textarea:focus, .contact input:focus {
+      border: 2px solid #6267A3; }
+  .contact .socialMedia {
+    margin: 100px 0 100px 0; }
+    .contact .socialMedia h4 {
+      color: #EEE;
+      font-size: 25px;
+      margin-bottom: 10px; }
+    .contact .socialMedia i {
+      font-size: 30px;
+      margin: 10px; }
+
+.footer {
+  background: #000;
+  text-align: center;
+  height: 40px;
+  color: #BF7533;
+  font-size: 16px;
+  padding-top: 10px; }
+  .footer span {
+    margin-right: 15px; }
+
+@media(max-width: 840px) {
+  .wrapper {
+    width: 90%; } }
+@media(max-width: 700px) {
+  .projectImg img {
+    width: 250px !important;
+    height: 250px !important; }
+
+  .project .desc div {
+    margin-bottom: 20px !important; } }
+@media(max-width: 590px) {
+  .projectImg img {
+    width: 200px !important;
+    height: 200px !important; } }
+@media(max-width: 524px) {
+  .testimonials .client {
+    text-align: center; }
+    .testimonials .client img, .testimonials .client div {
+      float: none !important;
+      margin: 0 !important; } }
 @media (max-height: 600px) {
   .welcome {
     height: 600px; }
-    .welcome .logo {
-      margin-top: 108px !important; }
     .welcome .welcome_text {
       margin-top: 60px !important; }
     .welcome h4 {

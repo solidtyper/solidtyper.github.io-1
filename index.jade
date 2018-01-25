@@ -27,17 +27,17 @@ html
                 .socialMedia
                     h4 you can also find me here :
                     .icons
-                        a(href= 'https://www.youtube.com/solidtyping' target = '_blank' style = 'color:#A00')
+                        a(href= 'https://www.youtube.com/solidtyper' target = '_blank' style = 'color:#A00')
                             i(class = 'fa fa-youtube') 
-                        a(href= 'https://www.facebook.com/solidtyping' target = '_blank' style = 'color:#1E2B75')
+                        a(href= 'https://www.facebook.com/solidtyper' target = '_blank' style = 'color:#1E2B75')
                             i(class = 'fa fa-facebook-square') 
-                        a(href= 'https://www.twitter.com/solidtyping' target = '_blank' style = 'color: #2387B0')
+                        a(href= 'https://www.twitter.com/solidtyper' target = '_blank' style = 'color: #2387B0')
                             i(class = 'fa fa-twitter-square') 
-                        a(href= 'https://www.github.com/solidtyping' target = '_blank' style = 'color:#000')
+                        a(href= 'https://www.github.com/solidtyper' target = '_blank' style = 'color:#000')
                             i(class = 'fa fa-github-square') 
-                        a(href= 'https://www.instagram.com/solidtyping' target = '_blank' style = 'color:#a0286a')    
+                        a(href= 'https://www.instagram.com/solidtyper' target = '_blank' style = 'color:#a0286a')    
                             i(class = 'fa fa-instagram')
-                        a(href= 'https://www.codepen.io/solidtyping' target = '_blank' style = 'color:#666')
+                        a(href= 'https://www.codepen.io/solidtyper' target = '_blank' style = 'color:#666')
                             i(class = 'fa fa-codepen') 
             .flesh_container
                 .aboutMeFlesh 
@@ -125,12 +125,12 @@ html
             .projectContainer
                 .wrapper
                     .project
-                        .img
+                        .projectImg
                             img(src='imgs/building.png' alt='building')
                         .desc
                             div project 1
                             p  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet ex quis vestibulum mollis. Maecenas arcu ligula, tempor ut molestie nec, lacinia                
-                .testemonials
+                .testimonials
                     .wrapper
                         .quote
                             blockquote 
@@ -143,15 +143,15 @@ html
             .projectContainer
                 .wrapper
                     .project
-                        .img
+                        .projectImg
                             img(src='imgs/building1.png' alt='building')
                         .desc
                             div project 2
                             p  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet ex quis vestibulum mollis. Maecenas arcu ligula, tempor ut molestie nec, lacinia
-                .testemonials
+                .testimonials
                     .wrapper
                         .quote
-                            blockquote
+                            blockquote 
                                 span “
                                 | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet ex quis vestibulum mollis. Maecenas arcu ligula, tempor ut molestie nec,
                         .client
@@ -159,18 +159,35 @@ html
                             .clientDesc Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 
         .contact
-            h2 contact me
-            form
+            h2 get in touch
             .phone
             .email
-            .facebook
-            .twitter
-            .codepen
-            .github
-            .youtube
+            form(action='confirm.php' required method='post')
+                input(type='text' name='name' placeholder='Name' autofocus='on' autocomplete='on')
+                input(type='email' name='email' placeholder='Email' autocomplete='on')
+                textarea(name='msg' placeholder='message')
+                input(type='submit' name='submit' value='SEND')
+            
+            .socialMedia
+                h4 let's connect
+                .icons
+                    a(href= 'https://www.youtube.com/solidtyper' target = '_blank' style = 'color:#A00')
+                        i(class = 'fa fa-youtube') 
+                    a(href= 'https://www.facebook.com/solidtyper' target = '_blank' style = 'color:#1E2B75')
+                        i(class = 'fa fa-facebook-square') 
+                    a(href= 'https://www.twitter.com/solidtyper' target = '_blank' style = 'color: #2387B0')
+                        i(class = 'fa fa-twitter-square')
+                    a(href= 'https://www.instagram.com/solidtyper' target = '_blank' style = 'color: #a0286a')
+                        i(class = 'fa fa-instagram')
+                    a(href= 'https://www.github.com/solidtyper' target = '_blank' style = 'color:#000')
+                        i(class = 'fa fa-github-square') 
+                    a(href= 'https://www.codepen.io/solidtyper' target = '_blank' style = 'color:#666')
+                        i(class = 'fa fa-codepen') 
             
         .footer
-            h4 anas ouardini all rights reserved &copy 2018
+            h4 
+                span anas ouardini
+                |all rights reserved &copy 2018
 
 
 
