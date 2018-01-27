@@ -7,31 +7,30 @@
     <script src="js/script.js"></script>
   </head>
   <body>
-    <div class="welcome">
+    <div id="welcome" class="welcome">
       <div class="menu_icon">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
       <div class="menu"></div>
-      <div class="logo">coming soon!</div>
-      <div class="welcome_text">
-        <p>hi, my name's <b>anas ouardini,</b></p>
-        <p>i'm a web developer, i build websites you can read <b>about me, </b>and i've built some websites you can see <b>my work.</b></p>
-        <p>if you like what i do you can <b>contact me</b></p>
+      <div class="logo_container">
+        <div class="logo"></div>
+        <div class="nick_name">solidtyper</div>
+      </div>
+      <div class="welcome_text"><b>hi, my name's <span>anas ouardini</span></b><b>, i'm a web developer, i build websites you can read <a href="#about">about me</a>. i've built some websites you can see <a href="#work">my work</a></b><b>. if you like what i do you can <a href="#contact">contact me</a></b>
         <div class="socialMedia">
           <h4>you can also find me here :</h4>
-          <div class="icons"><a href="https://www.youtube.com/solidtyper" target="_blank" style="color:#A00"><i class="fa fa-youtube"> </i></a><a href="https://www.facebook.com/solidtyper" target="_blank" style="color:#1E2B75"><i class="fa fa-facebook-square"> </i></a><a href="https://www.twitter.com/solidtyper" target="_blank" style="color: #2387B0"><i class="fa fa-twitter-square"> </i></a><a href="https://www.github.com/solidtyper" target="_blank" style="color:#000"><i class="fa fa-github-square"> </i></a><a href="https://www.instagram.com/solidtyper" target="_blank" style="color:#a0286a">   <i class="fa fa-instagram"></i></a><a href="https://www.codepen.io/solidtyper" target="_blank" style="color:#666"><i class="fa fa-codepen"> </i></a></div>
+          <div class="icons"><a href="https://www.youtube.com/solidtyper" target="_blank"><i class="fa fa-youtube"> </i></a><a href="https://www.facebook.com/solidtyper" target="_blank"><i class="fa fa-facebook-square"> </i></a><a href="https://www.twitter.com/solidtyper" target="_blank"><i class="fa fa-twitter-square"> </i></a><a href="https://www.instagram.com/solidtyper" target="_blank">   <i class="fa fa-instagram"></i></a><a href="https://www.github.com/solidtyper" target="_blank"><i class="fa fa-github-square"> </i></a><a href="https://www.codepen.io/solidtyper" target="_blank"><i class="fa fa-codepen"> </i></a></div>
         </div>
       </div>
-      <div class="flesh_container">
-        <div class="aboutMeFlesh"> <b>about me</b>
-          <div class="flesh">
-            <div class="r_flesh"></div>
-            <div class="l_flesh"></div>
-          </div>
-        </div>
-      </div>
+      <div class="flesh_container"><a href="#about">
+          <div class="aboutMeFlesh"> <b>about me</b>
+            <div class="flesh">
+              <div class="r_flesh"></div>
+              <div class="l_flesh"></div>
+            </div>
+          </div></a></div>
     </div>
     <div class="menu_overlay">
       <div class="menu_objects">
@@ -41,7 +40,7 @@
         <h4>contact me</h4>
       </div>
     </div>
-    <div class="about">
+    <div id="about" class="about">
       <div class="wrapper">
         <h2>about me</h2>
         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet ex quis vestibulum mollis. Maecenas arcu ligula, tempor ut molestie nec,</div>
@@ -80,7 +79,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet ex quis vestibulum mollis. Maecenas arcu ligula, tempor ut molestie nec, lacinia eget diam. Curabitur at ultrices ex. Vivamus malesuada magna ac risus tempus sagittis. Mauris et dapibus lorem, et ullamcorper dolor. Sed faucibus massa ut lectus pellentesque ornare. Integer convallis sapien in magna tincidunt, vel tempor massa pulvinar. Vestibulum euismod, elit eget fermentum lacinia, eros diam dapibus mi, a commodo urna arcu at magna.</p>
       </div>
     </div>
-    <div class="myWork">
+    <div id="work" class="work">
       <h2>my work</h2>
       <div class="projectContainer">
         <div class="wrapper">
@@ -125,19 +124,19 @@
         </div>
       </div>
     </div>
-    <div class="contact">
+    <div id="contact" class="contact">
       <h2>get in touch</h2>
       <div class="phone"></div>
       <div class="email"></div>
       <form action="confirm.php" required method="post">
-        <input type="text" name="name" placeholder="Name" autofocus="on" autocomplete="on">
+        <input type="text" name="name" placeholder="Name" autocomplete="on">
         <input type="email" name="email" placeholder="Email" autocomplete="on">
         <textarea name="msg" placeholder="message"></textarea>
         <input type="submit" name="submit" value="SEND">
       </form>
       <div class="socialMedia">
         <h4>let's connect</h4>
-        <div class="icons"><a href="https://www.youtube.com/solidtyper" target="_blank" style="color:#A00"><i class="fa fa-youtube"> </i></a><a href="https://www.facebook.com/solidtyper" target="_blank" style="color:#1E2B75"><i class="fa fa-facebook-square"> </i></a><a href="https://www.twitter.com/solidtyper" target="_blank" style="color: #2387B0"><i class="fa fa-twitter-square"></i></a><a href="https://www.instagram.com/solidtyper" target="_blank" style="color: #a0286a"><i class="fa fa-instagram"></i></a><a href="https://www.github.com/solidtyper" target="_blank" style="color:#000"><i class="fa fa-github-square"> </i></a><a href="https://www.codepen.io/solidtyper" target="_blank" style="color:#666"><i class="fa fa-codepen"> </i></a></div>
+        <div class="icons"><a href="https://www.youtube.com/solidtyper" target="_blank" style="color: #A00"><i class="fa fa-youtube"> </i></a><a href="https://www.facebook.com/solidtyper" target="_blank" style="color: #1E2B75"><i class="fa fa-facebook-square"> </i></a><a href="https://www.twitter.com/solidtyper" target="_blank" style="color: #2387B0"><i class="fa fa-twitter-square"></i></a><a href="https://www.instagram.com/solidtyper" target="_blank" style="color: #a0286a"><i class="fa fa-instagram"></i></a><a href="https://www.github.com/solidtyper" target="_blank" style="color: #222"><i class="fa fa-github-square"> </i></a><a href="https://www.codepen.io/solidtyper" target="_blank" style="color: #222"><i class="fa fa-codepen"> </i></a></div>
       </div>
     </div>
     <div class="footer">

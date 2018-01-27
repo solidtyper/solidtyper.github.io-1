@@ -3,8 +3,9 @@
     padding: 0
     box-sizing: border-box
 
-body
-    background: #CCC
+::selection
+    color: #BAAE39
+    background: #D88738
 
 .wrapper
     width: 80%
@@ -13,8 +14,7 @@ body
 .welcome
     position: relative
     overflow: hidden
-    background: #000
-    color: #DDD
+    background: #333
     height: 100vh
 
     .menu_icon
@@ -30,81 +30,97 @@ body
             background: #CF7118
             margin-top: 4px
 
-    .logo
+    .logo_container
         width: 300px
         height: 50px
         background: #AAA
         border-radius: 10px
         margin: 18vh auto 0 auto
-        text-align: center
         font-size: 30px
         color: #CF7118
+
+        .logo
+            height: 100%
+            width: 25%
+            background-image: url('../icons/logo.png')
+
+        .nick_name
+            display: inline
 
     .welcome_text
         width: 80vw
         margin: 10vh auto 0 auto
         text-align: center
+        color: #999
+        line-height: 30px
 
-        p
+        b
             font-size: 25px
 
-            b
+            a, span
                 color: #CF7118
+                text-decoration: none
+                text-transform: capitalize
+
+            span
+                text-transform: uppercase
+                font-size: 22px
+
+    .socialMedia
+        margin: 10vh 0 auto 0
 
         h4
-            margin-top: 10vh
-            color: #AAA
+            color: #BBB
             font-size: 20px
 
         .icons
-            background: linear-gradient(to left, rgba(#AAA,.001), rgba(#AAA,.3), rgba(#AAA,.001))
-            width: 420px
             margin: 40px auto 0 auto
-            padding: 10px
+            display: inline-block
 
             a
-                color: #DDD
+                color: #CF7118
                 text-decoration: none
 
             .fa
-                margin-left: 30px
+                margin: 0 15px 0 15px
                 font-size: 30px
-
-            .fa-facebook
-                color: #00C !important
 
     .flesh_container
         position: absolute
         bottom: 2vh
         width: 100%
+        color: #BBB
 
-    .aboutMeFlesh
-        width: 65px
-        margin: 0 auto
-        text-align: center
-        font-size: 16px
-        cursor: pointer
+        a
+            text-decoration: none
+            color: #BBB
 
-        .flesh
-            margin-top: 10px
-            position: relative
+        .aboutMeFlesh
+            width: 65px
+            margin: 0 auto
+            text-align: center
+            font-size: 16px
 
-            .r_flesh, .l_flesh
-                background: #FFF
-                width: 15px
-                height: 3px
-                position: absolute
-                bottom: 0
+            .flesh
+                margin-top: 10px
+                position: relative
 
-            .r_flesh
-                left: 27px
-                transform-origin: right
-                transform: rotate(-45deg)
+                .r_flesh, .l_flesh
+                    background: #BBB
+                    width: 15px
+                    height: 3px
+                    position: absolute
+                    bottom: 0
 
-            .l_flesh
-                left: 23px
-                transform-origin: left
-                transform: rotate(45deg)
+                .r_flesh
+                    left: 27px
+                    transform-origin: right
+                    transform: rotate(-45deg)
+
+                .l_flesh
+                    left: 23px
+                    transform-origin: left
+                    transform: rotate(45deg)
 
 .menu_overlay
     position: fixed
@@ -156,7 +172,7 @@ body
 
     h4
         margin: 20px 0 20px 0
-        color: #9E5A28
+        color: #304094
         font-size: 25px
 
     p
@@ -171,26 +187,26 @@ body
         justify-content: space-between
 
         img
-            width: 100px
-            height: 100px
+            width: 80px
+            height: 80px
 
         div
             font-size: 30px
             margin-top: 30px
 
-.myWork
-    background: #EEE
+.work
+    background: #2D2F54
     text-align: center
     overflow: hidden
 
     h2
         font-size: 40px
-        margin: 40px 0 140px 0
-        color: #333
+        margin: 100px 0 140px 0
+        color: #E36E17
 
     .projectContainer
         margin-bottom: 140px
-        color: #777
+        color: #BBB
 
         .project
             padding: 20px 0
@@ -210,11 +226,12 @@ body
                 div
                     font-size: 30px
                     margin: 10px 0 50px 0
-                    color: #444
+                    color: #C96215
 
         .testimonials
-            background: #CCC
+            background: #B55813
             padding: 10px 0
+            color: #DDD
 
             .quote
                 blockquote
@@ -224,6 +241,7 @@ body
                     span
                         font-size: 60px
                         margin-right: 20px
+                        color: #33398C
 
             .client
                 margin: auto
@@ -236,10 +254,11 @@ body
                     float: left
 
                 .clientDesc
-                    font-size: 16px
-                    font-weight: bolder
+                    font-size: 17px
+                    font-weight: bold
                     float: left
                     margin: 40px 0 0 10px
+                    color: #33398C
 
 
 
@@ -248,14 +267,14 @@ body
 
 
 .contact
-    background: #D9853A
+    background: #C77A35
     text-align : center
     overflow: hidden
 
     h2
         font-size: 40px
-        margin: 40px 0 100px 0
-        color: #6267A3
+        margin: 100px 0 140px 0
+        color: #333A8F
 
     input
         width: 40%
@@ -297,7 +316,7 @@ body
         resize: vertical
 
     textarea, input
-        border: 0 solid #CCC
+        border: 0 solid
 
         &:focus
             border: 2px solid #6267A3
@@ -306,7 +325,7 @@ body
         margin: 100px 0 100px 0
 
         h4
-            color: #EEE
+            color: #252966
             font-size: 25px
             margin-bottom: 10px
 
@@ -317,6 +336,7 @@ body
 .footer
     background: #000
     text-align: center
+    font-weight: bolder
     height: 40px
     color: #BF7533
     font-size: 16px

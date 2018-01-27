@@ -3,8 +3,9 @@
   padding: 0;
   box-sizing: border-box; }
 
-body {
-  background: #CCC; }
+::selection {
+  color: #BAAE39;
+  background: #D88738; }
 
 .wrapper {
   width: 80%;
@@ -13,8 +14,7 @@ body {
 .welcome {
   position: relative;
   overflow: hidden;
-  background: #000;
-  color: #DDD;
+  background: #333;
   height: 100vh; }
   .welcome .menu_icon {
     float: right;
@@ -27,67 +27,79 @@ body {
       height: 6px;
       background: #CF7118;
       margin-top: 4px; }
-  .welcome .logo {
+  .welcome .logo_container {
     width: 300px;
     height: 50px;
     background: #AAA;
     border-radius: 10px;
     margin: 18vh auto 0 auto;
-    text-align: center;
     font-size: 30px;
     color: #CF7118; }
+    .welcome .logo_container .logo {
+      height: 100%;
+      width: 25%;
+      background-image: url("../icons/logo.png"); }
+    .welcome .logo_container .nick_name {
+      display: inline; }
   .welcome .welcome_text {
     width: 80vw;
     margin: 10vh auto 0 auto;
-    text-align: center; }
-    .welcome .welcome_text p {
+    text-align: center;
+    color: #999;
+    line-height: 30px; }
+    .welcome .welcome_text b {
       font-size: 25px; }
-      .welcome .welcome_text p b {
-        color: #CF7118; }
-    .welcome .welcome_text h4 {
-      margin-top: 10vh;
-      color: #AAA;
+      .welcome .welcome_text b a, .welcome .welcome_text b span {
+        color: #CF7118;
+        text-decoration: none;
+        text-transform: capitalize; }
+      .welcome .welcome_text b span {
+        text-transform: uppercase;
+        font-size: 22px; }
+  .welcome .socialMedia {
+    margin: 10vh 0 auto 0; }
+    .welcome .socialMedia h4 {
+      color: #BBB;
       font-size: 20px; }
-    .welcome .welcome_text .icons {
-      background: linear-gradient(to left, rgba(170, 170, 170, 0.001), rgba(170, 170, 170, 0.3), rgba(170, 170, 170, 0.001));
-      width: 420px;
+    .welcome .socialMedia .icons {
       margin: 40px auto 0 auto;
-      padding: 10px; }
-      .welcome .welcome_text .icons a {
-        color: #DDD;
+      display: inline-block; }
+      .welcome .socialMedia .icons a {
+        color: #CF7118;
         text-decoration: none; }
-      .welcome .welcome_text .icons .fa {
-        margin-left: 30px;
+      .welcome .socialMedia .icons .fa {
+        margin: 0 15px 0 15px;
         font-size: 30px; }
-      .welcome .welcome_text .icons .fa-facebook {
-        color: #00C !important; }
   .welcome .flesh_container {
     position: absolute;
     bottom: 2vh;
-    width: 100%; }
-  .welcome .aboutMeFlesh {
-    width: 65px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer; }
-    .welcome .aboutMeFlesh .flesh {
-      margin-top: 10px;
-      position: relative; }
-      .welcome .aboutMeFlesh .flesh .r_flesh, .welcome .aboutMeFlesh .flesh .l_flesh {
-        background: #FFF;
-        width: 15px;
-        height: 3px;
-        position: absolute;
-        bottom: 0; }
-      .welcome .aboutMeFlesh .flesh .r_flesh {
-        left: 27px;
-        transform-origin: right;
-        transform: rotate(-45deg); }
-      .welcome .aboutMeFlesh .flesh .l_flesh {
-        left: 23px;
-        transform-origin: left;
-        transform: rotate(45deg); }
+    width: 100%;
+    color: #BBB; }
+    .welcome .flesh_container a {
+      text-decoration: none;
+      color: #BBB; }
+    .welcome .flesh_container .aboutMeFlesh {
+      width: 65px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 16px; }
+      .welcome .flesh_container .aboutMeFlesh .flesh {
+        margin-top: 10px;
+        position: relative; }
+        .welcome .flesh_container .aboutMeFlesh .flesh .r_flesh, .welcome .flesh_container .aboutMeFlesh .flesh .l_flesh {
+          background: #BBB;
+          width: 15px;
+          height: 3px;
+          position: absolute;
+          bottom: 0; }
+        .welcome .flesh_container .aboutMeFlesh .flesh .r_flesh {
+          left: 27px;
+          transform-origin: right;
+          transform: rotate(-45deg); }
+        .welcome .flesh_container .aboutMeFlesh .flesh .l_flesh {
+          left: 23px;
+          transform-origin: left;
+          transform: rotate(45deg); }
 
 .menu_overlay {
   position: fixed;
@@ -128,7 +140,7 @@ body {
     margin: 70px 0 30px 0; }
   .about h4 {
     margin: 20px 0 20px 0;
-    color: #9E5A28;
+    color: #304094;
     font-size: 25px; }
   .about p {
     margin: 30px 0 20px 0; }
@@ -140,69 +152,72 @@ body {
     flex-direction: row;
     justify-content: space-between; }
     .about .iconsFrame img {
-      width: 100px;
-      height: 100px; }
+      width: 80px;
+      height: 80px; }
     .about .iconsFrame div {
       font-size: 30px;
       margin-top: 30px; }
 
-.myWork {
-  background: #EEE;
+.work {
+  background: #2D2F54;
   text-align: center;
   overflow: hidden; }
-  .myWork h2 {
+  .work h2 {
     font-size: 40px;
-    margin: 40px 0 140px 0;
-    color: #333; }
-  .myWork .projectContainer {
+    margin: 100px 0 140px 0;
+    color: #E36E17; }
+  .work .projectContainer {
     margin-bottom: 140px;
-    color: #777; }
-    .myWork .projectContainer .project {
+    color: #BBB; }
+    .work .projectContainer .project {
       padding: 20px 0;
       display: flex;
       justify-content: space-between; }
-      .myWork .projectContainer .project .projectImg img {
+      .work .projectContainer .project .projectImg img {
         width: 300px;
         height: 300px;
         border-radius: 10px; }
-      .myWork .projectContainer .project .desc {
+      .work .projectContainer .project .desc {
         width: 50%;
         font-size: 18px; }
-        .myWork .projectContainer .project .desc div {
+        .work .projectContainer .project .desc div {
           font-size: 30px;
           margin: 10px 0 50px 0;
-          color: #444; }
-    .myWork .projectContainer .testimonials {
-      background: #CCC;
-      padding: 10px 0; }
-      .myWork .projectContainer .testimonials .quote blockquote {
+          color: #C96215; }
+    .work .projectContainer .testimonials {
+      background: #B55813;
+      padding: 10px 0;
+      color: #DDD; }
+      .work .projectContainer .testimonials .quote blockquote {
         margin-bottom: 20px;
         font-size: 20px; }
-        .myWork .projectContainer .testimonials .quote blockquote span {
+        .work .projectContainer .testimonials .quote blockquote span {
           font-size: 60px;
-          margin-right: 20px; }
-      .myWork .projectContainer .testimonials .client {
+          margin-right: 20px;
+          color: #33398C; }
+      .work .projectContainer .testimonials .client {
         margin: auto;
         overflow: hidden;
         display: inline-block; }
-        .myWork .projectContainer .testimonials .client img {
+        .work .projectContainer .testimonials .client img {
           width: 70px;
           height: 70px;
           float: left; }
-        .myWork .projectContainer .testimonials .client .clientDesc {
-          font-size: 16px;
-          font-weight: bolder;
+        .work .projectContainer .testimonials .client .clientDesc {
+          font-size: 17px;
+          font-weight: bold;
           float: left;
-          margin: 40px 0 0 10px; }
+          margin: 40px 0 0 10px;
+          color: #33398C; }
 
 .contact {
-  background: #D9853A;
+  background: #C77A35;
   text-align: center;
   overflow: hidden; }
   .contact h2 {
     font-size: 40px;
-    margin: 40px 0 100px 0;
-    color: #6267A3; }
+    margin: 100px 0 140px 0;
+    color: #333A8F; }
   .contact input {
     width: 40%;
     height: 50px;
@@ -238,13 +253,13 @@ body {
     font-weight: bold;
     resize: vertical; }
   .contact textarea, .contact input {
-    border: 0 solid #CCC; }
+    border: 0 solid; }
     .contact textarea:focus, .contact input:focus {
       border: 2px solid #6267A3; }
   .contact .socialMedia {
     margin: 100px 0 100px 0; }
     .contact .socialMedia h4 {
-      color: #EEE;
+      color: #252966;
       font-size: 25px;
       margin-bottom: 10px; }
     .contact .socialMedia i {
@@ -254,6 +269,7 @@ body {
 .footer {
   background: #000;
   text-align: center;
+  font-weight: bolder;
   height: 40px;
   color: #BF7533;
   font-size: 16px;
