@@ -7,6 +7,13 @@
   color: #BAAE39;
   background: #D88738; }
 
+body {
+  font-family: "Rubik", Sans-serif; }
+  body h2 {
+    font-family: "Anton", Sans-serif; }
+  body h4, body h3 {
+    font-family: "Lalezar", cursive; }
+
 .wrapper {
   width: 80%;
   margin: 0 auto; }
@@ -29,24 +36,28 @@
       margin-top: 4px; }
   .welcome .logo_container {
     width: 300px;
-    height: 50px;
-    background: #AAA;
     border-radius: 10px;
-    margin: 18vh auto 0 auto;
+    margin: 12vh auto 0 auto;
     font-size: 30px;
-    color: #CF7118; }
+    color: #CF7118;
+    display: flex;
+    justify-content: space-between; }
     .welcome .logo_container .logo {
-      height: 100%;
-      width: 25%;
-      background-image: url("../icons/logo.png"); }
+      height: 80px;
+      width: 80px;
+      background-image: url("../icons/logo.png");
+      background-size: cover;
+      border-radius: 50%; }
     .welcome .logo_container .nick_name {
-      display: inline; }
+      margin-top: 20px;
+      font-family: "Monoton", cursive; }
   .welcome .welcome_text {
     width: 80vw;
-    margin: 10vh auto 0 auto;
+    margin: 14vh auto 0 auto;
     text-align: center;
     color: #999;
-    line-height: 30px; }
+    line-height: 30px;
+    font-family: "Righteous", cursive; }
     .welcome .welcome_text b {
       font-size: 25px; }
       .welcome .welcome_text b a, .welcome .welcome_text b span {
@@ -59,7 +70,7 @@
   .welcome .socialMedia {
     margin: 10vh 0 auto 0; }
     .welcome .socialMedia h4 {
-      color: #BBB;
+      color: #999;
       font-size: 20px; }
     .welcome .socialMedia .icons {
       margin: 40px auto 0 auto;
@@ -74,12 +85,12 @@
     position: absolute;
     bottom: 2vh;
     width: 100%;
-    color: #BBB; }
+    color: #EEE; }
     .welcome .flesh_container a {
       text-decoration: none;
       color: #BBB; }
     .welcome .flesh_container .aboutMeFlesh {
-      width: 65px;
+      width: 70px;
       margin: 0 auto;
       text-align: center;
       font-size: 16px; }
@@ -130,7 +141,7 @@
   .about h2 {
     text-align: center;
     margin: 60px 0 20px 0;
-    font-size: 30px;
+    font-size: 35px;
     color: #E36E17; }
   .about div {
     margin-bottom: 160px; }
@@ -163,7 +174,7 @@
   text-align: center;
   overflow: hidden; }
   .work h2 {
-    font-size: 40px;
+    font-size: 35px;
     margin: 100px 0 140px 0;
     color: #E36E17; }
   .work .projectContainer {
@@ -194,7 +205,7 @@
         .work .projectContainer .testimonials .quote blockquote span {
           font-size: 60px;
           margin-right: 20px;
-          color: #33398C; }
+          color: #2D2F54; }
       .work .projectContainer .testimonials .client {
         margin: auto;
         overflow: hidden;
@@ -205,10 +216,10 @@
           float: left; }
         .work .projectContainer .testimonials .client .clientDesc {
           font-size: 17px;
-          font-weight: bold;
+          font-weight: bolder;
           float: left;
           margin: 40px 0 0 10px;
-          color: #33398C; }
+          color: #2D2F54; }
 
 .contact {
   background: #C77A35;
@@ -217,7 +228,7 @@
   .contact h2 {
     font-size: 40px;
     margin: 100px 0 140px 0;
-    color: #333A8F; }
+    color: #2C3385; }
   .contact input {
     width: 40%;
     height: 50px;
@@ -233,11 +244,11 @@
     .contact input[name='submit'] {
       height: 30px;
       margin-top: 5px;
-      background: #6267A3;
+      background: #2C3385;
       color: #FFF;
-      font-size: 15px; }
-  .contact input[type='submit'] {
-    padding: 0; }
+      font-size: 15px;
+      padding: 0;
+      color: #6267A3; }
   .contact textarea {
     height: 200px;
     width: 40%;
@@ -259,7 +270,7 @@
   .contact .socialMedia {
     margin: 100px 0 100px 0; }
     .contact .socialMedia h4 {
-      color: #252966;
+      color: #2C3385;
       font-size: 25px;
       margin-bottom: 10px; }
     .contact .socialMedia i {

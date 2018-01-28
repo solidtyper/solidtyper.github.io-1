@@ -1,8 +1,10 @@
 doctype html
 html
     head
-        title code solide
+        title solidtyper
+        link(rel='icon' href='icons/logo.png' style='border-radius: 50%')
         link(rel='stylesheet' href='css/style.css')
+        link(href="https://fonts.googleapis.com/css?family=Monoton|Righteous|Anton|Lalezar|Rubik" rel="stylesheet")
         link(rel='stylesheet' href='css/font-awesome.min.css')
         script(src='js/script.js')
         
@@ -44,7 +46,7 @@ html
             .flesh_container
                 a(href='#about')
                     .aboutMeFlesh 
-                        b about me
+                        h4 about me
                         .flesh
                             .r_flesh
                             .l_flesh
@@ -131,7 +133,8 @@ html
                         .projectImg
                             img(src='imgs/building.png' alt='building')
                         .desc
-                            div project 1
+                            div 
+                                h3 project 1
                             p  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet ex quis vestibulum mollis. Maecenas arcu ligula, tempor ut molestie nec, lacinia                
                 .testimonials
                     .wrapper
@@ -149,7 +152,8 @@ html
                         .projectImg
                             img(src='imgs/building1.png' alt='building')
                         .desc
-                            div project 2
+                            div 
+                                h3 project 2
                             p  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet ex quis vestibulum mollis. Maecenas arcu ligula, tempor ut molestie nec, lacinia
                 .testimonials
                     .wrapper
@@ -168,8 +172,8 @@ html
             form(action='confirm.php' required method='post')
                 input(type='text' name='name' placeholder='Name' autocomplete='on')
                 input(type='email' name='email' placeholder='Email' autocomplete='on')
-                textarea(name='msg' placeholder='message')
-                input(type='submit' name='submit' value='SEND')
+                textarea(name='msg' placeholder='Message')
+                input(type='submit' name='submit' value='Send')
             
             .socialMedia
                 h4 let's connect
@@ -188,7 +192,7 @@ html
                         i(class = 'fa fa-codepen') 
             
         .footer
-            h4 
+            h3
                 span anas ouardini
                 |all rights reserved &copy 2018
 
