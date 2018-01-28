@@ -36,6 +36,10 @@ body {
       margin-top: 4px; }
   .welcome .logo_container {
     width: 300px;
+<<<<<<< HEAD
+=======
+    height: 50px;
+>>>>>>> origin/master
     border-radius: 10px;
     margin: 12vh auto 0 auto;
     font-size: 30px;
@@ -43,11 +47,16 @@ body {
     display: flex;
     justify-content: space-between; }
     .welcome .logo_container .logo {
+<<<<<<< HEAD
       height: 80px;
       width: 80px;
       background-image: url("../icons/logo.png");
       background-size: cover;
       border-radius: 50%; }
+=======
+      height: 100%;
+      width: 25%;}
+>>>>>>> origin/master
     .welcome .logo_container .nick_name {
       margin-top: 20px;
       font-family: "Monoton", cursive; }
