@@ -3,16 +3,30 @@
   padding: 0;
   box-sizing: border-box; }
 
-::selection {
-  color: #BAAE39;
+::-o-selection {
+  color: #333;
+  background: #D88738; }
+
+::-ms-selection {
+  color: #333;
+  background: #D88738; }
+
+::-moz-selection {
+  color: #333;
+  background: #D88738; }
+
+::-webkit-selection {
+  color: #333;
   background: #D88738; }
 
 body {
   font-family: "Rubik", Sans-serif; }
   body h2 {
-    font-family: "Anton", Sans-serif; }
+    font-family: "Anton", Sans-serif;
+    text-transform: uppercase; }
   body h4, body h3 {
-    font-family: "Lalezar", cursive; }
+    font-family: "Lalezar", cursive;
+    text-transform: uppercase; }
 
 .wrapper {
   width: 80%;
@@ -21,7 +35,7 @@ body {
 .welcome {
   position: relative;
   overflow: hidden;
-  background: #333;
+  background: linear-gradient(#444, #222);
   height: 100vh; }
   .welcome .menu_icon {
     float: right;
@@ -56,17 +70,19 @@ body {
     margin: 14vh auto 0 auto;
     text-align: center;
     color: #999;
-    line-height: 30px;
+    line-height: 35px;
     font-family: "Righteous", cursive; }
     .welcome .welcome_text b {
       font-size: 25px; }
-      .welcome .welcome_text b a, .welcome .welcome_text b span {
+      .welcome .welcome_text b a {
         color: #CF7118;
         text-decoration: none;
         text-transform: capitalize; }
       .welcome .welcome_text b span {
-        text-transform: uppercase;
-        font-size: 22px; }
+        text-transform: capitalize; }
+      .welcome .welcome_text b:nth-of-type(2) {
+        color: #444;
+        background: #D89738; }
   .welcome .socialMedia {
     margin: 10vh 0 auto 0; }
     .welcome .socialMedia h4 {
@@ -90,7 +106,7 @@ body {
       text-decoration: none;
       color: #BBB; }
     .welcome .flesh_container .aboutMeFlesh {
-      width: 70px;
+      width: 80px;
       margin: 0 auto;
       text-align: center;
       font-size: 16px; }
@@ -104,11 +120,11 @@ body {
           position: absolute;
           bottom: 0; }
         .welcome .flesh_container .aboutMeFlesh .flesh .r_flesh {
-          left: 27px;
+          left: 34px;
           transform-origin: right;
           transform: rotate(-45deg); }
         .welcome .flesh_container .aboutMeFlesh .flesh .l_flesh {
-          left: 23px;
+          left: 30px;
           transform-origin: left;
           transform: rotate(45deg); }
 
@@ -134,13 +150,20 @@ body {
         background: #B56315; }
 
 .about {
-  background: #222;
+  background: linear-gradient(#333, #222, #111);
   overflow: hidden;
   text-align: center;
   color: #CCC; }
+  .about::before {
+    position: absolute;
+    left: 0;
+    content: "";
+    border-right: 48.5vw solid transparent;
+    border-left: 48.5vw solid transparent;
+    border-top: 60px solid #222; }
   .about h2 {
     text-align: center;
-    margin: 60px 0 20px 0;
+    margin: 180px 0 20px 0;
     font-size: 35px;
     color: #E36E17; }
   .about div {
@@ -170,12 +193,19 @@ body {
       margin-top: 30px; }
 
 .work {
-  background: #2D2F54;
+  background: linear-gradient(#2D2F54, #161729);
   text-align: center;
   overflow: hidden; }
+  .work::before {
+    position: absolute;
+    left: 0;
+    content: "";
+    border-right: 48.5vw solid transparent;
+    border-left: 48.5vw solid transparent;
+    border-top: 60px solid #111; }
   .work h2 {
     font-size: 35px;
-    margin: 100px 0 140px 0;
+    margin: 180px 0 140px 0;
     color: #E36E17; }
   .work .projectContainer {
     margin-bottom: 140px;
@@ -192,7 +222,7 @@ body {
         width: 50%;
         font-size: 18px; }
         .work .projectContainer .project .desc div {
-          font-size: 30px;
+          font-size: 25px;
           margin: 10px 0 50px 0;
           color: #C96215; }
     .work .projectContainer .testimonials {
@@ -222,12 +252,19 @@ body {
           color: #2D2F54; }
 
 .contact {
-  background: #C77A35;
+  background: linear-gradient(#C7983E, #C77A35);
   text-align: center;
   overflow: hidden; }
+  .contact::before {
+    position: absolute;
+    left: 0;
+    content: "";
+    border-right: 48.5vw solid transparent;
+    border-left: 48.5vw solid transparent;
+    border-top: 60px solid #161729; }
   .contact h2 {
     font-size: 40px;
-    margin: 100px 0 140px 0;
+    margin: 180px 0 140px 0;
     color: #2C3385; }
   .contact input {
     width: 40%;
@@ -284,7 +321,7 @@ body {
   height: 40px;
   color: #BF7533;
   font-size: 16px;
-  padding-top: 10px; }
+  padding-top: 8px; }
   .footer span {
     margin-right: 15px; }
 
