@@ -20,7 +20,7 @@ body {
 .welcome {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(#555, #000);
+  background: linear-gradient(#055, #012);
   height: 100vh; }
   .welcome .logo_container {
     width: 300px;
@@ -140,7 +140,7 @@ body {
           color: #b56315; }
 
 .work {
-  background: linear-gradient(#2D2F54, #161729);
+  background: linear-gradient(#054, #021);
   text-align: center;
   overflow: hidden; }
   .work::before {
@@ -149,7 +149,7 @@ body {
     content: '';
     border-right: 48.5vw solid transparent;
     border-left: 48.5vw solid transparent;
-    border-top: 60px solid #000; }
+    border-top: 60px solid #012; }
   .work h2 {
     font-size: 35px;
     margin: 180px 0 140px 0;
@@ -200,7 +200,7 @@ body {
           color: #2D2F54; }
 
 .contact {
-  background: linear-gradient(#C7983E, #C77A35);
+  background: linear-gradient(#C77A35, #804, #603);
   text-align: center;
   overflow: hidden; }
   .contact::before {
@@ -209,7 +209,7 @@ body {
     content: '';
     border-right: 48.5vw solid transparent;
     border-left: 48.5vw solid transparent;
-    border-top: 60px solid #161729; }
+    border-top: 60px solid #021; }
   .contact h2 {
     font-size: 40px;
     margin: 180px 0 140px 0;
