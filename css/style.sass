@@ -2,20 +2,9 @@
     margin: 0
     padding: 0
     box-sizing: border-box
-
-::-o-selection
     color: #333
     background: #D88738
-::-ms-selection
-    color: #333
-    background: #D88738
-::-moz-selection
-    color: #333
-    background: #D88738
-::-webkit-selection
-    color: #333
-    background: #D88738
-
+    
 body
     font-family: 'Rubik', Sans-serif
 
@@ -35,7 +24,7 @@ body
 .welcome
     position: relative
     overflow: hidden
-    background: linear-gradient(#444, #222)
+    background: linear-gradient(#555, #000)
     height: 100vh
 
     .logo_container
@@ -159,19 +148,21 @@ body
     visibility: visible !important
 
     .menu_objects
-        width: 60vw
-        margin: 20vh auto 0 auto
+        margin: 25vh auto 0 auto
         text-align: center
-        font-size: 32px
-        line-height: 20vh
+        font-size: 40px
         text-transform: capitalize
 
         a
             text-decoration: none
+            display: block
+            cursor: default
+            margin: 15vh 0 15vh 0
 
             h4
                 color: #AAA
                 cursor: pointer
+                display: inline
                 &:hover
                     color: rgba(181,99,21,1)
 
@@ -186,7 +177,7 @@ body
         content: ''
         border-right: 48.5vw solid transparent
         border-left: 48.5vw solid transparent
-        border-top: 60px solid #222
+        border-top: 60px solid #000
 
     h2
         font-size: 35px
