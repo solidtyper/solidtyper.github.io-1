@@ -1,0 +1,1 @@
+varc=0,alert(e);var f=5;
