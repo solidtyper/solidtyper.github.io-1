@@ -1,1 +1,1 @@
-$(function(){$("html").niceScroll({cursorcolor:"#CF7118",cursorwidth:"10px",cursorborder:"none",cursorborderradius:"2px"}),new SmoothScroll('a[href*="#"]')});
+$(function(){$("html").niceScroll({cursorcolor:"#CF7118",cursorwidth:"10px",cursorborder:"none",cursorborderradius:"2px"});new SmoothScroll('a[href*="#"]')});

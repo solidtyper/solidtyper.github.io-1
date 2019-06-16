@@ -1,0 +1,53 @@
+.container {
+  padding: 0; }
+
+.navbar {
+  padding: 0; }
+  .navbar .navbar-brand {
+    padding: 5px 0;
+    margin: 0; }
+    .navbar .navbar-brand .icon, .navbar .navbar-brand .label {
+      display: inline;
+      color: #9F4640; }
+    .navbar .navbar-brand .icon img {
+      width: 50px;
+      height: 50px; }
+
+.navbar-light .navbar-nav .active .nav-link {
+  color: #FFF !important; }
+
+.navbar-nav .nav-link {
+  padding: 15px; }
+
+.active {
+  background: #9F4640; }
+
+.carousel-indicators li {
+  border: 1px solid #9F4640;
+  height: 6px; }
+
+.carousel-indicators .active {
+  background: #9F4640;
+  width: 35px; }
+
+.carousel-caption {
+  background: rgba(159, 70, 64, 0.2);
+  bottom: 100px; }
+
+@media (min-width: 576px) {
+  .navbar-expand-sm .navbar-nav .nav-link {
+    height: 60px;
+    margin: 0 8px;
+    color: #9F4640; }
+    .navbar-expand-sm .navbar-nav .nav-link:hover {
+      border-bottom: 2px solid #9F4640;
+      color: #999; } }
+
+@media (max-width: 576px) {
+  nav.navbar {
+    height: auto; }
+  .navbar-expand-sm .navbar-nav .nav-link {
+    color: #9F4640; }
+    .navbar-expand-sm .navbar-nav .nav-link:hover {
+      border-bottom: 4px solid #9F4640;
+      color: #999; } }
